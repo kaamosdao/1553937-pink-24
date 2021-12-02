@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <header class="main-header">
+      <div class="main-header">
         <div class="wrapper">
           <a class="main-header__logo" href="index.html">
             <svg
@@ -57,10 +57,10 @@
             </ul>
           </nav>
         </div>
-      </header>
+      </div>
       <div class="download download-wrapper">
         <h1 class="download-title">Взгляните на жизнь иначе!</h1>
-        <a href="#" class="download__button" type="button">
+        <a class="download__button" href="#">
           Скачать приложение
         </a>
         <ul class="download__list application-list">
@@ -102,11 +102,11 @@
       <h1 class="visually-hidden">
         Приложение "Pink" - Взгляните на жизнь иначе!
       </h1>
-      <section class="informarion">
+      <section class="information">
         <h2 class="visually-hidden">Информация о приложении</h2>
         <p class="information__intro-1">Устали от серости мегаполиса?</p>
         <p class="information__intro-2">Нам есть, что вам<br />предложить!</p>
-        <ul class="advantages__list">
+        <ul class="advantages">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__text">
@@ -121,7 +121,7 @@
               чтобы усилить эффект
             </p>
           </li>
-          <li class="information__item">
+          <li class="advantages__item">
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__text">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
@@ -129,7 +129,7 @@
             </p>
           </li>
         </ul>
-        <ul class="screen__list">
+        <ul class="screen">
           <li class="screen__item">
             <img
               src="img/iPhone-screen-1-mobile.png"
@@ -155,6 +155,19 @@
             />
           </li>
         </ul>
+        <div class="research">
+          <div class="research__wrapper">
+            <h3 class="research__title">Эффект на 24 часа!</h3>
+            <p class="research__text">
+              Британские ученые провели исследования и доказали, что
+              положительный эффект от использования приложения длится целые
+              сутки!
+            </p>
+            <a class="research__show-more" href="#">
+              Узнать больше об исследовании
+            </a>
+          </div>
+        </div>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
@@ -191,7 +204,7 @@
 
       <section class="prices">
         <h2 class="visually-hidden">Информация о ценах</h2>
-        <div class="wrapper">
+        <div class="wrapper slider">
           <ul class="features">
             <li class="features__filter">Розовый фильтр</li>
             <li class="features__smiles">Смайлики</li>
@@ -202,14 +215,14 @@
               <p class="tariff-base__name">База</p>
               <p class="tariff-base__cost">1,99 USD</p>
             </li>
-            <li class="tariff-base__feature-filter feature-filter--included">
+            <li class="tariff-base__feature-filter feature-filter feature-filter--included">
               <p class="feature-filter__name visually-hidden">Розовый фильтр</p>
             </li>
-            <li class="tariff-base__feature-smiles feature-smiles--excluded">
+            <li class="tariff-base__feature-smiles feature-smiles feature-smiles--excluded">
               <p class="feature-smiles__name visually-hidden">Смайлики</p>
             </li>
             <li
-              class="tariff-base__feature-comments feature-comments--excluded"
+              class="tariff-base__feature-comments feature-comments feature-comments--excluded"
             >
               <p class="feature-comments__name visually-hidden">Комментарии</p>
             </li>
@@ -220,18 +233,18 @@
               <p class="tariff-standart__cost">3,99 USD</p>
             </li>
             <li
-              class="tariff-standart__feature-filter feature-filter--included"
+              class="tariff-standart__feature-filter feature-filter feature-filter--included"
             >
               <p class="feature-filter__name visually-hidden">Розовый фильтр</p>
             </li>
             <li
-              class="tariff-standart__feature-smiles feature-smiles--included"
+              class="tariff-standart__feature-smiles feature-smiles feature-smiles--included"
             >
               <p class="feature-smiles__name visually-hidden">Смайлики</p>
             </li>
             <li
               class="
-                tariff-standart__feature-comments
+                tariff-standart__feature-comments feature-comments
                 feature-comments--excluded
               "
             >
@@ -244,36 +257,36 @@
               <p class="tariff-unlimited__cost">9,99 USD</p>
             </li>
             <li
-              class="tariff-unlimited__feature-filter feature-filter--included"
+              class="tariff-unlimited__feature-filter feature-filter feature-filter--included"
             >
               <p class="feature-filter__name visually-hidden">Розовый фильтр</p>
             </li>
             <li
-              class="tariff-unlimited__feature-smiles feature-smiles--included"
+              class="tariff-unlimited__feature-smiles feature-smiles feature-smiles--included"
             >
               <p class="feature-smiles__name visually-hidden">Смайлики</p>
             </li>
             <li
               class="
-                tariff-unlimited__feature-comments
+                tariff-unlimited__feature-comments feature-comments
                 feature-comments--included
               "
             >
               <p class="feature-comments__name visually-hidden">Комментарии</p>
             </li>
           </ul>
+          <p class="prices__toggles slider__toggles">
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="slider__toggle slider__toggle--current" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
+          </p>
         </div>
-        <p class="prices__toggles slider__toggles">
-          <button class="slider__toggle" type="button">
-            <span class="visually-hidden">1</span>
-          </button>
-          <button class="slider__toggle slider__toggle--current" type="button">
-            <span class="visually-hidden">2</span>
-          </button>
-          <button class="slider__toggle" type="button">
-            <span class="visually-hidden">3</span>
-          </button>
-        </p>
       </section>
 
       <section class="contacts">
@@ -332,8 +345,8 @@
           </li>
         </ul>
         <div class="footer-copyright">
-          <p class="footer-copyrite__text">Разработано</p>
-          <a class="footer-copyrite__logo" href="https://htmlacademy.ru/">
+          <p class="footer-copyright__text">Разработано</p>
+          <a class="footer-copyright__logo" href="https://htmlacademy.ru/">
             <span class="visually-hidden">HTML academy logo</span>
           </a>
         </div>
