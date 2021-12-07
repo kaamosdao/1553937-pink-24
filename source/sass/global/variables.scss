@@ -1,0 +1,17 @@
+// FONTS
+$font-family: "Open Sans", sans-serif;
+
+@mixin font($weight: normal, $size: 14px, $height: 24px) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-highlight: #d22856;
+$color-blue: #1d2631;
+$color-blue-opaco: #283645;
+$color-grey: #f2f2f2;
+$color-dark-grey: #e5e5e5;

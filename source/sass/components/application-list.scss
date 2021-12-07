@@ -1,0 +1,10 @@
+@import "../global/variables.scss";
+
+.application-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 204px;
+  list-style: none;
+}

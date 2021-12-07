@@ -1,0 +1,33 @@
+@import "../global/variables.scss";
+
+.site-list {
+  display: none;
+  color: $color-white;
+  margin: 0;
+  padding: 0;
+
+  @include font(bold, 18px, 13px);
+  text-transform: uppercase;
+  list-style-type: none;
+  background-color: $color-blue-opaco;
+}
+
+.site-list__link {
+  display: block;
+  box-sizing: border-box;
+  min-height: 63px;
+  padding-top: 25px;
+  padding-bottom: 13px;
+  text-align: center;
+  color: $color-white;
+  text-decoration: none;
+}
+
+.site-list__item {
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 63px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 0 1px 0 $color-black, inset 0 1px 0transparentize($color-white, 0.15);
+}

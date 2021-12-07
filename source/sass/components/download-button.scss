@@ -1,0 +1,16 @@
+@import "../global/variables.scss";
+
+.download-button {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  height: 55px;
+  padding: 14px;
+
+  @include font(bold, 18px, 18px);
+  color: $color-white;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid $color-white;
+  border-radius: 29px;
+}

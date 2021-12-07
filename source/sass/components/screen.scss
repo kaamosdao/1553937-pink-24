@@ -1,0 +1,15 @@
+@import "../global/variables.scss";
+
+.screen {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: max-content;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.screen__item {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  transform: translateY(40px);
+}

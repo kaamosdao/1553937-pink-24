@@ -1,0 +1,43 @@
+@import "../global/variables.scss";
+
+.tariff-standart {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tariff-standart__header {
+  width: 276px;
+  min-height: 94px;
+
+
+  background-color: $color-blue-opaco;
+  border-top: 2px solid $color-blue-opaco;
+  border-bottom: 2px solid $color-blue-opaco;
+  border-left: 2px solid $color-grey;
+  border-right: 2px solid $color-grey;
+}
+
+.tariff-standart__name {
+  @include font(bold, 16px, 30px);
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.tariff-standart__cost {
+  @include font(lighter, 18px, 30px);
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.tariff-standart__feature-filter {
+
+}
+
+.tariff-standart__feature-smiles {
+
+}
+
+.tariff-standart__feature-comments {
+
+}

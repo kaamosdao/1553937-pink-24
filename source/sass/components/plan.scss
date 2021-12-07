@@ -1,0 +1,26 @@
+@import "../global/variables.scss";
+
+.plan {
+  display: flex;
+  align-items: flex-end;
+}
+
+.plan__features {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+}
+
+.plan__tariff-base {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+}
+
+.plan__tariff-standart {
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+}
+
+.plan__tariff-unlimited {
+  grid-column: 4 / 5;
+  grid-row: 1 / -1;
+}

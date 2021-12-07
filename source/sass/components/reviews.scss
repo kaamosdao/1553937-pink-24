@@ -1,0 +1,39 @@
+@import "../global/variables.scss";
+
+.reviews {
+  background-color: $color-white;
+}
+
+.reviews__list {
+  margin-top: 50px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.reviews__author-name {
+  @include font(bold, 18px, 30px);
+  font-style: normal;
+  color: $color-black;
+}
+
+.reviews__author-information {
+  display: none;
+}
+
+.reviews__text {
+  width: 270px;
+
+  @include font(normal, 14px, 30px);
+  color: $color-blue-opaco;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+}

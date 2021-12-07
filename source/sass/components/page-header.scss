@@ -1,0 +1,10 @@
+@import "../global/variables.scss";
+
+.page-header {
+  width: 320px;
+  min-height: 733px;
+  color: $color-white;
+  background-color: $color-blue;
+  background-image: url("../../img/background-phone-mobile.jpg");
+  background-repeat: no-repeat;
+}

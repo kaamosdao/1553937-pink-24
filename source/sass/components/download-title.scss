@@ -1,0 +1,9 @@
+@import "../global/variables.scss";
+
+.download-title {
+  width: 280px;
+  min-height: 367px;
+
+  @include font(lighter, 24px, 29px);
+  color: $color-white;
+}
