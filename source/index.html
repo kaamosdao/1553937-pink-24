@@ -217,117 +217,85 @@
 
       <section class="prices">
         <h2 class="visually-hidden">Информация о ценах</h2>
-        <div class="prices__plan plan prices-slider">
-          <ul class="plan__features features">
-            <li class="features__filter">Розовый фильтр</li>
-            <li class="features__smiles">Смайлики</li>
-            <li class="features__comments">Комментарии</li>
-          </ul>
-          <ul class="plan__tariff-base tariff-base">
-            <li class="tariff-base__header">
-              <p class="tariff-base__name">База</p>
-              <p class="tariff-base__cost">1,99 USD</p>
-            </li>
-            <li
-              class="
-                tariff-base__feature-filter
-                feature-filter feature-filter--included
-              "
+        <div class="prices-slider">
+          <table class="prices__plan plan">
+            <tr class="plan__header">
+              <th class="plan__empty"></th>
+              <th class="plan__tariff">
+                <p class="plan__name">База</p>
+                <p class="plan__cost">1,99 USD</p>
+              </th>
+              <th class="plan__tariff">
+                <p class="plan__name">Стандарт</p>
+                <p class="plan__cost">3,99 USD</p>
+              </th>
+              <th class="plan__tariff">
+                <p class="plan__name">Анлим</p>
+                <p class="plan__cost">9,99 USD</p>
+              </th>
+            </tr>
+
+            <tr class="plan__features">
+              <td class="plan__feature">
+                <p class="plan__main-feature-name">Розовый фильтр</p>
+              </td>
+              <td class="plan__feature-pink-base">
+                <p class="plan__secondary-feature-name">Розовый фильтр</p>
+              </td>
+              <td class="plan__feature-pink-standart">
+                <p class="plan__secondary-feature-name">Розовый фильтр</p>
+              </td>
+              <td class="plan__feature-pink-unlim">
+                <p class="plan__secondary-feature-name">Розовый фильтр</p>
+              </td>
+            </tr>
+
+            <tr class="plan__features">
+              <td class="plan__feature">
+                <p class="plan__main-feature-name">Смайлики</p>
+              </td>
+              <td class="plan__feature-smiles-base">
+                <p class="plan__secondary-feature-name">Смайлики</p>
+              </td>
+              <td class="plan__feature-smiles-standart">
+                <p class="plan__secondary-feature-name">Смайлики</p>
+              </td>
+              <td class="plan__feature-smiles-unlim">
+                <p class="plan__secondary-feature-name">Смайлики</p>
+              </td>
+            </tr>
+
+            <tr class="plan__features">
+              <td class="plan__feature">
+                <p class="plan__main-feature-name">Комментарии</p>
+              </td>
+              <td class="plan__feature-comments-base">
+                <p class="plan__secondary-feature-name">Комментарии</p>
+              </td>
+              <td class="plan__feature-comments-standart">
+                <p class="plan__secondary-feature-name">Комментарии</p>
+              </td>
+              <td class="plan__feature-comments-unlim">
+                <p class="plan__secondary-feature-name">Комментарии</p>
+              </td>
+            </tr>
+          </table>
+
+          <p class="prices__toggles">
+            <button class="prices-slider__toggle" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button
+              class="prices-slider__toggle prices-slider__toggle--current"
+              type="button"
             >
-              <p class="feature-filter__name">Розовый фильтр</p>
-            </li>
-            <li
-              class="
-                tariff-base__feature-smiles
-                feature-smiles feature-smiles--excluded
-              "
-            >
-              <p class="feature-smiles__name">Смайлики</p>
-            </li>
-            <li
-              class="
-                tariff-base__feature-comments
-                feature-comments feature-comments--excluded
-              "
-            >
-              <p class="feature-comments__name">Комментарии</p>
-            </li>
-          </ul>
-          <ul class="plan__tariff-standart tariff-standart">
-            <li class="tariff-standart__header">
-              <p class="tariff-standart__name">Стандарт</p>
-              <p class="tariff-standart__cost">3,99 USD</p>
-            </li>
-            <li
-              class="
-                tariff-standart__feature-filter
-                feature-filter feature-filter--included
-              "
-            >
-              <p class="feature-filter__name">Розовый фильтр</p>
-            </li>
-            <li
-              class="
-                tariff-standart__feature-smiles
-                feature-smiles feature-smiles--included
-              "
-            >
-              <p class="feature-smiles__name">Смайлики</p>
-            </li>
-            <li
-              class="
-                tariff-standart__feature-comments
-                feature-comments feature-comments--excluded
-              "
-            >
-              <p class="feature-comments__name">Комментарии</p>
-            </li>
-          </ul>
-          <ul class="plan__tariff-unlimited tariff-unlimited">
-            <li class="tariff-unlimited__header">
-              <p class="tariff-unlimited__name">Анлим</p>
-              <p class="tariff-unlimited__cost">9,99 USD</p>
-            </li>
-            <li
-              class="
-                tariff-unlimited__feature-filter
-                feature-filter feature-filter--included
-              "
-            >
-              <p class="feature-filter__name">Розовый фильтр</p>
-            </li>
-            <li
-              class="
-                tariff-unlimited__feature-smiles
-                feature-smiles feature-smiles--included
-              "
-            >
-              <p class="feature-smiles__name">Смайлики</p>
-            </li>
-            <li
-              class="
-                tariff-unlimited__feature-comments
-                feature-comments feature-comments--included
-              "
-            >
-              <p class="feature-comments__name">Комментарии</p>
-            </li>
-          </ul>
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="prices-slider__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
+          </p>
         </div>
-        <p class="prices__toggles prices-slider__toggles">
-          <button class="prices-slider__toggle" type="button">
-            <span class="visually-hidden">1</span>
-          </button>
-          <button
-            class="prices-slider__toggle prices-slider__toggle--current"
-            type="button"
-          >
-            <span class="visually-hidden">2</span>
-          </button>
-          <button class="prices-slider__toggle" type="button">
-            <span class="visually-hidden">3</span>
-          </button>
-        </p>
       </section>
 
       <section class="contacts">

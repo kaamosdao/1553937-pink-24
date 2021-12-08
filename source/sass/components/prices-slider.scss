@@ -1,6 +1,12 @@
 @import "../global/variables.scss";
 
-.reviews-slider__toggle {
+.prices-slider {
+  padding-top: 103px;
+  padding-bottom: 45px;
+  transform: translateX(-535px);
+}
+
+.prices-slider__toggle {
   padding: 0;
   width: 6px;
   height: 6px;
@@ -10,11 +16,11 @@
   cursor: pointer;
 }
 
-.reviews-slider__toggle:not(:last-child) {
+.prices-slider__toggle:not(:last-child) {
   margin: 0 19px 0 0;
 }
 
-.reviews-slider__toggle--current {
+.prices-slider__toggle--current {
   width: 12px;
   height: 12px;
   background-color: $color-white;
