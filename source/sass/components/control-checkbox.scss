@@ -1,0 +1,34 @@
+@import "../global/variables.scss";
+
+.control-checkbox {
+  position: relative;
+}
+
+.control-checkbox__label {
+  padding-left: 59px;
+
+  @include font(normal, 18px, 30px);
+  color: $color-blue-opaco;
+}
+
+.control-checkbox__mark {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: -12px;
+
+  background-color: $color-white;
+  border: 2px solid $color-dark-grey;
+  border-radius: 1px;
+}
+
+.control-checkbox__input:checked + .control-checkbox__mark::before {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../../img/checkbox-mark.png");
+  background-repeat: no-repeat;
+  content: "";
+}

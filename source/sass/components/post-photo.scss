@@ -1,0 +1,41 @@
+@import "../global/variables.scss";
+
+.post-photo {
+  display: grid;
+  grid-template-rows: max-content max-content;
+}
+
+.post-photo__comment {
+  display: block;
+  box-sizing: border-box;
+  padding: 25px 10px 25px 17px;
+  background-color: $color-grey;
+}
+
+.post-photo__name {
+  margin: 0;
+
+  @include font(bold, 14px, 24px);
+  color: $color-blue-opaco;
+}
+
+.post-photo__time {
+  @include font(lighter, 14px, 24px);
+  text-transform: uppercase;
+}
+
+.post-photo__comment-text {
+  @include font(normal, 14px, 24px);
+  color: $color-blue-opaco;
+}
+
+.post-photo__likes {
+  padding-left: 48px;
+  margin: 0;
+
+  @include font(normal, 14px, 24px);
+  color: $color-highlight;
+  text-transform: uppercase;
+}
+
+

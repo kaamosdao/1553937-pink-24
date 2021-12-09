@@ -1,14 +1,21 @@
 @import "../global/variables.scss";
 
-.download__title {
-  margin: 0;
-  padding-top: 95px;
-  margin-bottom: 0;
+.download {
   text-align: center;
 }
 
+.download__title {
+  margin: 0 auto 0 auto;
+  padding-top: 95px;
+  padding-bottom: 25px;
+  width: 280px;
+
+  @include font(lighter, 24px, 29px);
+  color: $color-white;
+}
+
 .download__button {
-  margin-top: 28px;
+  margin-top: 20px;
 }
 
 .download__list {
@@ -22,4 +29,9 @@
 
   @include font(lighter, 14px, 24px);
   text-align: center;
+}
+
+.download__img {
+  width: 320px;
+  height: 286px;
 }

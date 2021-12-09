@@ -1,0 +1,26 @@
+@import "../global/variables.scss";
+
+.os-name-filter {
+  padding: 0;
+  border: none;
+}
+
+.os-name-filter__title {
+  padding-bottom: 40px;
+  width: 240px;
+
+  @include font(normal, 14px, 18px);
+  color: $color-highlight;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.os-name-filter__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.os-name-filter__item:not(:last-child) {
+  padding-bottom: 38px;
+}

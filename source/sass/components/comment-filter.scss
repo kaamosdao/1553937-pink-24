@@ -1,0 +1,30 @@
+@import "../global/variables.scss";
+
+.comment-filter {
+  padding: 0;
+  border: none;
+}
+
+.comment-filter__title {
+  padding-bottom: 22px;
+  width: 240px;
+
+  @include font(normal, 14px, 18px);
+  color: $color-highlight;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.comment-filter__textarea {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 276px;
+  height: 197px;
+
+  @include font(normal, 18px, 30px);
+  color: $color-blue-opaco;
+  text-align: left;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  resize: none;
+}

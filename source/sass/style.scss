@@ -4,6 +4,8 @@
 @import "global/global.scss";
 
 // components
+@import "components/wrapper.scss";
+@import "components/wrapper-form.scss";
 @import "components/page-header.scss";
 @import "components/main-header.scss";
 @import "components/main-nav.scss";
@@ -12,7 +14,6 @@
 @import "components/site-list.scss";
 @import "components/download.scss";
 @import "components/download-wrapper.scss";
-@import "components/download-title.scss";
 @import "components/download-button.scss";
 @import "components/application-list.scss";
 @import "components/information.scss";
@@ -24,7 +25,27 @@
 @import "components/prices.scss";
 @import "components/plan.scss";
 @import "components/prices-slider.scss";
+@import "components/contacts.scss";
+@import "components/contacts-group.scss";
+@import "components/page-footer.scss";
+@import "components/social-list.scss";
+@import "components/filter.scss";
+@import "components/full-name-filter.scss";
+@import "components/achievements-filter.scss";
+@import "components/contacts-filter.scss";
+@import "components/os-name-filter.scss";
+@import "components/comment-filter.scss";
+@import "components/control-checkbox.scss";
+@import "components/control-radio.scss";
+@import "components/main-button.scss";
+@import "components/filter-ending.scss";
+@import "components/modal-failure.scss";
+@import "components/modal-success.scss";
+@import "components/photo-gallery.scss";
+@import "components/post-panorama.scss";
+@import "components/post-photo.scss";
+@import "components/upload.scss";
+@import "components/upload-filter.scss";
 
 
-@import "components/wrapper.scss";
 @import "components/visually-hidden.scss";

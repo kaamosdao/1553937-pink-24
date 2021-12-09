@@ -5,6 +5,25 @@
   min-height: 733px;
   color: $color-white;
   background-color: $color-blue;
-  background-image: url("../../img/background-phone-mobile.jpg");
+  background-image: url("../../img/background-house-mobile.png");
   background-repeat: no-repeat;
+}
+
+.page-header--contest {
+  min-height: 237px;
+}
+
+.page-header--photos {
+  min-height: 237px;
+  background-color: $color-white;
+}
+
+.page-header__text {
+  margin: 0 auto 0 auto;
+  padding-top: 95px;
+  width: 228px;
+
+  @include font(lighter, 24px, 33px);
+  text-align: center;
+  color: $color-white;
 }

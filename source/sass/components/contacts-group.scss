@@ -1,0 +1,38 @@
+$font-family: "Open Sans", sans-serif;
+
+.contacts-group {
+  margin-bottom: 41px;
+}
+
+.contacts-group__phone {
+  margin-bottom: 31px;
+}
+
+.contacts-group__mail {
+  margin-bottom: 35px;
+}
+
+.contacts-group__adress {
+  margin-bottom: 0;
+}
+
+.contacts-group__phone,
+.contacts-group__mail,
+.contacts-group__adress {
+  text-align: center;
+}
+
+.contacts-group__phone-text,
+.contacts-group__mail-text,
+.contacts-group__adress-text {
+  @include font(bold, 18px, 25px);
+  color: $color-blue-opaco;
+}
+
+.contacts-group__phone-number,
+.contacts-group__mail-name,
+.contacts-group__adress-name {
+  @include font(lighter, 24px, 33px);
+  color: $color-highlight;
+  text-decoration: none;
+}

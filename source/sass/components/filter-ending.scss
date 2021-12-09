@@ -1,0 +1,14 @@
+@import "../global/variables.scss";
+
+.filter-ending__additional-information {
+  padding-top: 46px;
+
+  @include font(normal, 14px, 30px);
+  color: $color-blue-opaco;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.filter-ending__additional-information-important {
+  color: $color-highlight;
+}

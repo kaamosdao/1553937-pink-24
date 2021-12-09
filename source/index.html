@@ -48,7 +48,7 @@
               <a class="site-list__link" href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photos.html">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="contest.html">Конкурс</a>
@@ -61,46 +61,53 @@
           </ul>
         </nav>
       </div>
-      <div class="download download-wrapper">
-        <h1 class="download__title download-title">
-          Взгляните на жизнь иначе!
-        </h1>
-        <a class="download__button download-button" href="#">
-          Скачать приложение
-        </a>
-        <ul class="download__list application-list">
-          <li class="application-list__item">
-            <span class="visually-hidden">Apple</span>
-            <img
-              src="img/logo-apple-mobile.svg"
-              width="55"
-              height="64"
-              alt="Логотип Apple."
-            />
-          </li>
-          <li class="application-list__item">
-            <span class="visually-hidden">Android</span>
-            <img
-              src="img/logo-android-mobile.svg"
-              width="43"
-              height="47"
-              alt="Логотип Andoid."
-            />
-          </li>
-          <li class="application-list__item">
-            <span class="visually-hidden">Microsoft</span>
-            <img
-              src="img/logo-microsoft-mobile.svg"
-              width="44"
-              height="41"
-              alt="Логотип Microsoft."
-            />
-          </li>
-        </ul>
-        <p class="download__description">
-          Доступно для iPhone, iPad, Android, Windows<br />Phone, OS X, Windows
-          8
-        </p>
+      <div class="download">
+        <h1 class="download__title">Взгляните на жизнь иначе!</h1>
+        <img
+          class="download__img"
+          src="img/hand-with-phone.png"
+          width="320"
+          height="286"
+          alt="Рука с телефоном"
+        />
+        <div class="download-wrapper">
+          <a class="download__button download-button" href="#">
+            Скачать приложение
+          </a>
+          <ul class="download__list application-list">
+            <li class="application-list__item">
+              <span class="visually-hidden">Apple</span>
+              <img
+                src="img/logo-apple-mobile.svg"
+                width="55"
+                height="64"
+                alt="Логотип Apple."
+              />
+            </li>
+            <li class="application-list__item">
+              <span class="visually-hidden">Android</span>
+              <img
+                src="img/logo-android-mobile.svg"
+                width="43"
+                height="47"
+                alt="Логотип Andoid."
+              />
+            </li>
+            <li class="application-list__item">
+              <span class="visually-hidden">Microsoft</span>
+              <img
+                src="img/logo-microsoft-mobile.svg"
+                width="44"
+                height="41"
+                alt="Логотип Microsoft."
+              />
+            </li>
+          </ul>
+          <p class="download__description">
+            Доступно для iPhone, iPad, Android,<br />Windows Phone, OS X,
+            Windows 8
+          </p>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -218,7 +225,7 @@
       <section class="prices">
         <h2 class="visually-hidden">Информация о ценах</h2>
         <div class="prices-slider">
-          <table class="prices__plan plan">
+          <table class="prices__plan plan prices-slider__plan">
             <tr class="plan__header">
               <th class="plan__empty"></th>
               <th class="plan__tariff">
@@ -304,25 +311,32 @@
           Остались вопросы?<br />
           Свяжитесь с нами!
         </p>
-        <div class="phone">
-          <p class="phone__text">Звоните:</p>
-          <a class="phone__number" href="tel:88125556666">+7 (812) 555-66-66</a>
+        <div class="contacts-group contacts__group">
+          <div class="contacts-group__phone">
+            <p class="contacts-group__phone-text">Звоните:</p>
+            <a class="contacts-group__phone-number" href="tel:88125556666"
+              >+7 (812) 555-66-66</a
+            >
+          </div>
+          <div class="contacts-group__mail">
+            <p class="contacts-group__mail-text">Пишите:</p>
+            <a
+              class="contacts-group__mail-name"
+              href="mailto:mail@htmlacademy.ru"
+              >mail@htmlacademy.ru</a
+            >
+          </div>
+          <div class="contacts-group__adress">
+            <p class="contacts-group__adress-text">Приезжайте в гости:</p>
+            <p class="contacts-group__adress-name">
+              ул. Большая<br />
+              Конюшенная, 19/8
+            </p>
+          </div>
         </div>
-        <div class="mail">
-          <p class="mail__text">Пишите:</p>
-          <a class="mail__name" href="mailto:mail@htmlacademy.ru"
-            >mail@htmlacademy.ru</a
-          >
-        </div>
-        <div class="adress">
-          <p class="adress__text">Приезжайте в гости:</p>
-          <p class="adress__name">
-            ул. Большая<br />
-            Конюшенная, 19/8
-          </p>
-        </div>
-        <div class="map-image">
+        <div class="contacts__image-wrapper">
           <img
+            class="contacts__image"
             src="img/map-mobile.jpg"
             width="320"
             height="200"
@@ -332,7 +346,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer-wrapper">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="#">
           <span class="visually-hidden">Логотип</span>
         </a>
