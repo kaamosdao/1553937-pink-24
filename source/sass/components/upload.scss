@@ -1,8 +1,5 @@
 @import "../global/variables.scss";
 
-.upload {
-}
-
 .upload__text {
   @include font(normal, 14px, 30px);
   color: $color-blue-opaco;
