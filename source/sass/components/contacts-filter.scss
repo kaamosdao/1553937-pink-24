@@ -1,0 +1,42 @@
+@import "../global/variables.scss";
+
+.contacts-filter {
+  padding: 0;
+  border: none;
+}
+
+.contacts-filter__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contacts-filter__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-filter__item:not(:last-child) {
+  padding-bottom: 29px;
+}
+
+.contacts-filter__lable {
+  margin-left: 23px;
+
+  @include font(normal, 14px, 30px);
+  color: $color-highlight;
+  text-transform: uppercase;
+}
+
+.contacts-filter__input {
+  flex-grow: 1;
+  height: 59px;
+  padding-left: 22px;
+
+  @include font(normal, 18px, 30px);
+  color: $color-blue-opaco;
+  border: 2px solid $color-dark-grey;
+  border-radius: 1px;
+}

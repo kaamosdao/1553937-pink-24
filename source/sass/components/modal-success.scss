@@ -1,0 +1,47 @@
+@import "../global/variables.scss";
+
+.modal-success {
+  width: 320px;
+  min-height: 380px;
+  background-color: $color-white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+}
+
+.modal-success__wrapper,
+.modal-success__wrapper-secondary {
+  padding: 0 20px 0 20px;
+}
+
+.modal-success__wrapper-secondary {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 163px;
+  background-color: $color-grey;
+}
+
+.modal-success__title {
+  margin: 0;
+  padding-top: 40px;
+
+  @include font(bold, 18px, 24px);
+  color: $color-black;
+  text-align: center;
+}
+
+.modal-success__text {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 41px;
+  width: 265px;
+
+  @include font(normal, 14px, 24px);
+  color: $color-blue-opaco;
+  text-align: center;
+}
+
+.modal-success__button {
+  margin: 0;
+}

@@ -1,0 +1,18 @@
+@import "../global/variables.scss";
+
+.prices {
+  background-color: $color-grey;
+  overflow: hidden;
+}
+
+.prices__plan {
+  padding-top: 103px;
+  padding-bottom: 50px;
+}
+
+.prices__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+}

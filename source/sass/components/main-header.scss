@@ -1,0 +1,16 @@
+@import "../global/variables.scss";
+
+.main-header {
+  position: relative;
+
+  @include font(lighter);
+  color: $color-white;
+  background-color: $color-blue;
+}
+
+.main-header__logo {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

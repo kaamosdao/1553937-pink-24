@@ -1,0 +1,46 @@
+@import "../global/variables.scss";
+
+.upload__text {
+  @include font(normal, 14px, 30px);
+  color: $color-blue-opaco;
+  text-align: center;
+}
+
+.upload__wrapper {
+  padding: 20px 20px 0 20px;
+  background: $color-grey;
+}
+
+.upload__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  padding-top: 38px;
+  padding-bottom: 41px;
+  border-top: 3px solid transparentize($color-blue-opaco, 0.9);
+}
+
+.upload__buttons-upload {
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 10px;
+  width: 280px;
+  min-height: 55px;
+
+  @include font(bold, 18px, 18px);
+  border: 3px solid $color-highlight;
+  color: $color-highlight;
+  border-radius: 30px;
+}
+
+.upload__buttons-reset {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 280px;
+  min-height: 55px;
+
+  @include font(bold, 18px, 18px);
+  border: 3px solid transparentize($color-blue-opaco, 0.9);
+  color: transparentize($color-blue-opaco, 0.9);
+  border-radius: 30px;
+}

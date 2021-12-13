@@ -1,0 +1,26 @@
+@import "../global/variables.scss";
+
+.achievements-filter {
+  padding: 0;
+  border: none;
+}
+
+.achievements-filter__title {
+  padding-bottom: 44px;
+  width: 240px;
+
+  @include font(normal, 14px, 18px);
+  color: $color-highlight;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.achievements-filter__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.achievements-filter__item:not(:last-child) {
+  padding-bottom: 47px;
+}

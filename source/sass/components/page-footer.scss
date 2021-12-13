@@ -1,0 +1,10 @@
+@import "../global/variables.scss";
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  min-height: 284px;
+}

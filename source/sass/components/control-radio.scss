@@ -1,0 +1,35 @@
+@import "../global/variables.scss";
+
+.control-radio {
+  position: relative;
+}
+
+.control-radio__label {
+  padding-left: 59px;
+
+  @include font(normal, 18px, 30px);
+  color: $color-blue-opaco;
+}
+
+.control-radio__mark {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  top: -20px;
+
+  background-color: $color-white;
+  border: 2px solid $color-dark-grey;
+  border-radius: 50%;
+}
+
+.control-radio__input:checked + .control-radio__mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -7px;
+  width: 15px;
+  height: 15px;
+  background-color: $color-highlight;
+  border-radius: 50%;
+  content: "";
+}

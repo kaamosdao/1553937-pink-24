@@ -1,0 +1,89 @@
+@import "../global/variables.scss";
+
+.plan {
+  width: 1112px;
+  border-collapse: collapse;
+}
+
+.plan__tariff {
+  padding: 0;
+  height: 94px;
+  background-color: $color-blue-opaco;
+  border-top: none;
+  border-bottom: none;
+  border-left: 2px solid $color-grey;
+  border-right: 2px solid $color-grey;
+}
+
+.plan__tariff:last-child {
+  border-right: 2px solid $color-blue-opaco;
+}
+
+.plan__tariff:first-child {
+  border-left: 2px solid $color-blue-opaco;
+}
+
+.plan__empty {
+  background-color: $color-grey;
+  border-right: 2px solid $color-blue-opaco;
+}
+
+.plan__empty,
+.plan__tariff {
+  width: 276px;
+}
+
+.plan__name {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include font(bold, 16px, 30px);
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.plan__cost {
+  margin-top: 0;
+
+  @include font(lighter, 18px, 30px);
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.plan__main-feature-name,
+.plan__secondary-feature-name {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.plan__feature,
+.plan__feature-pink-base,
+.plan__feature-pink-standart,
+.plan__feature-pink-unlim,
+.plan__feature-smiles-base,
+.plan__feature-smiles-standart,
+.plan__feature-smiles-unlim,
+.plan__feature-comments-base,
+.plan__feature-comments-standart,
+.plan__feature-comments-unlim {
+  padding: 0;
+  width: 276px;
+  height: 59px;
+
+  @include font(normal, 14px, 30px);
+  color: $color-blue-opaco;
+  text-transform: uppercase;
+  background-color: $color-white;
+  border: 2px solid $color-dark-grey;
+}
+
+.plan__feature,
+.plan__feature-pink-base,
+.plan__feature-pink-standart,
+.plan__feature-pink-unlim {
+  border-top: 2px solid $color-blue-opaco;
+}
+
+.plan__feature:first-child {
+  border-top: 2px solid $color-dark-grey;
+}

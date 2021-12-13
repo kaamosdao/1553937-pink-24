@@ -1,0 +1,36 @@
+@import "../global/variables.scss";
+
+.modal-failure {
+  width: 320px;
+  min-height: 289px;
+  background-color: $color-white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+}
+
+.modal-failure__wrapper,
+.modal-failure__wrapper-secondary {
+  padding: 0 20px 0 20px;
+}
+
+.modal-failure__title {
+  margin: 0;
+  padding-top: 40px;
+
+  @include font(bold, 18px, 24px);
+  color: $color-black;
+  text-align: center;
+}
+
+.modal-failure__text {
+  margin: 0;
+  padding-top: 30px;
+
+  @include font(normal, 14px, 24px);
+  color: $color-blue-opaco;
+  text-align: center;
+}
+
+.modal-failure__button {
+  margin-top: 40px;
+}

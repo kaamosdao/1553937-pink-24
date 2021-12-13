@@ -1,0 +1,42 @@
+@import "../global/variables.scss";
+
+.advantages {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: max-content max-content;
+  background-color: $color-grey;
+}
+
+.advantages__list {
+  grid-row: 1 / 2;
+  margin: 0;
+  padding: 87px 0 0 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.advantages__item:not(:last-child) {
+  padding-bottom: 43px;
+}
+
+.advantages__title {
+  margin: 0 auto 0 auto;
+  padding-bottom: 24px;
+
+  @include font(bold, 18px, 24px);
+}
+
+.advantages__text {
+  margin: 0 auto 0 auto;
+  width: 250px;
+
+  @include font(normal, 14px, 24px);
+}
+
+.advantages__screen {
+  grid-row: 2 / 3;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}

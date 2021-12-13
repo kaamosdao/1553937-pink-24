@@ -1,0 +1,36 @@
+@import "../global/variables.scss";
+
+.filter {
+  background-color: $color-white;
+}
+
+.filter__information {
+  margin: 0;
+  padding-top: 44px;
+
+  @include font(normal, 14px, 30px);
+  color: $color-blue-opaco;
+  text-align: center;
+}
+
+.filter__full-name {
+  padding: 42px 0;
+}
+
+.filter__achievements {
+  padding: 42px 0;
+  background-color: $color-grey;
+}
+
+.filter__os-name {
+  padding: 42px 0;
+  background-color: $color-grey;
+}
+
+.filter__contacts {
+  padding: 42px 0;
+}
+
+.filter__comment {
+  padding: 42px 0 52px;
+}

@@ -1,0 +1,28 @@
+@import "../global/variables.scss";
+
+.photo-gallery__text {
+  padding: 54px 0 60px 0;
+  margin: 0 auto;
+  width: 235px;
+
+  @include font(normal, 14px, 30px);
+  color: $color-blue-opaco;
+  text-align: center;
+}
+
+.photo-gallery__panorama {
+  margin-bottom: 20px;
+}
+
+.photo-gallery__list {
+  display: grid;
+  grid-gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.photo-gallery__item {
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,42 @@
+@import "../global/variables.scss";
+
+.full-name-filter {
+  padding: 0;
+  border: none;
+}
+
+.full-name-filter__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.full-name-filter__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-name-filter__item:not(:last-child) {
+  padding-bottom: 29px;
+}
+
+.full-name-filter__lable {
+  margin-left: 23px;
+
+  @include font(normal, 14px, 30px);
+  color: $color-highlight;
+  text-transform: uppercase;
+}
+
+.full-name-filter__input {
+  flex-grow: 1;
+  height: 59px;
+  padding-left: 22px;
+
+  @include font(normal, 18px, 30px);
+  color: $color-blue-opaco;
+  border: 2px solid $color-dark-grey;
+  border-radius: 1px;
+}

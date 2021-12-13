@@ -1,0 +1,15 @@
+@import "../global/variables.scss";
+
+.main-button {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 276px;
+  min-height: 59px;
+
+  @include font(bold, 18px, 30px);
+  color: $color-white;
+  background-color: $color-green;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+}
