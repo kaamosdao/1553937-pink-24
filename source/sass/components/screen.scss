@@ -9,18 +9,10 @@
 
   overflow: hidden;
 
-  @media (min-width: $tablet-width) {
-
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: center;
   }
-}
-
-.research__wrapper {
-  
 }
 
 .screen__item {
