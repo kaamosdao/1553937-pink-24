@@ -5,6 +5,28 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 284px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 127px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 197px;
+  }
+}
+
+.page-footer__copyright__text {
+  @include font(normal, 14px, 18px);
+  color: $color-blue-opaco;
+
+
+  @media (min-width: $desktop-width) {
+    @include font(normal, 18px, 18px);
+  }
 }

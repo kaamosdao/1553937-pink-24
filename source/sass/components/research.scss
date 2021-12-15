@@ -2,4 +2,78 @@
 
 .research {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-top: 0;
+    padding-top: 54px;
+    padding-bottom: 50px;
+    background-color: $color-grey;
+  }
+}
+
+.research__image {
+  @media (min-width: $tablet-width) {
+    transform: scale(0.9);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: scale(1);
+  }
+}
+
+.research__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 534px;
+    margin-top: 50px;
+    margin-left: 70px;
+  }
+}
+
+.research__title {
+  @media (min-width: $tablet-width) {
+    @include font(bold, 30px, 36px);
+    color: $color-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(bold, 30px, 30px);
+    color: $color-black;
+  }
+}
+
+.research__text {
+
+  color: $color-blue-opaco;
+
+  @media (min-width: $tablet-width) {
+    @include font(normal, 14px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(normal, 18px, 30px);
+  }
+}
+
+.research__show-more {
+  color: $color-highlight;
+
+  @media (min-width: $tablet-width) {
+    @include font(normal, 14px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(normal, 18px, 30px);
+  }
 }

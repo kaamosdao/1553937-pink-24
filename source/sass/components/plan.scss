@@ -3,6 +3,14 @@
 .plan {
   width: 1112px;
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 616px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .plan__tariff {
@@ -13,6 +21,14 @@
   border-bottom: none;
   border-left: 2px solid $color-grey;
   border-right: 2px solid $color-grey;
+
+  @media (min-width: $tablet-width) {
+    height: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 94px;
+  }
 }
 
 .plan__tariff:last-child {
@@ -31,6 +47,14 @@
 .plan__empty,
 .plan__tariff {
   width: 276px;
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+  }
 }
 
 .plan__name {
@@ -40,6 +64,39 @@
   @include font(bold, 16px, 30px);
   color: $color-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(bold, 18px, 30px);
+    text-transform: none;
+  }
+}
+
+.plan__main-feature-name {
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+
+    @include font(normal, 14px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    text-transform: none;
+
+    @include font(normal, 18px, 30px);
+  }
+}
+
+.plan__secondary-feature-name {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .plan__cost {
@@ -48,6 +105,14 @@
   @include font(lighter, 18px, 30px);
   color: $color-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(lighter, 24px, 30px);
+  }
 }
 
 .plan__main-feature-name,
@@ -75,6 +140,16 @@
   text-transform: uppercase;
   background-color: $color-white;
   border: 2px solid $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+    height: 59px;
+  }
 }
 
 .plan__feature,

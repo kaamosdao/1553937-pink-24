@@ -2,18 +2,59 @@
 
 .contacts-group {
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 262px 262px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 524px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 262px 262px 262px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 863px;
+  }
 }
 
 .contacts-group__phone {
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
 }
 
 .contacts-group__mail {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
 }
 
 .contacts-group__adress {
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 .contacts-group__phone,

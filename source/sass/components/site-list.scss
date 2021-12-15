@@ -1,8 +1,8 @@
 @import "../global/variables.scss";
 
 .site-list {
-  display: none;
   color: $color-white;
+  width: 320px;
   margin: 0;
   padding: 0;
 
@@ -10,6 +10,19 @@
   text-transform: uppercase;
   list-style-type: none;
   background-color: $color-blue-opaco;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 620px;
+
+    @include font(normal, 18px, 18px);
+    text-transform: none;
+    background-color: transparent;
+  }
 }
 
 .site-list__link {
@@ -21,13 +34,23 @@
   text-align: center;
   color: $color-white;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .site-list__item {
   box-sizing: border-box;
-  width: 320px;
   min-height: 63px;
   padding-left: 25px;
   padding-right: 25px;
-  box-shadow: 0 1px 0 $color-black, inset 0 1px 0transparentize($color-white, 0.15);
+  box-shadow: 0 1px 0 $color-black,
+    inset 0 1px transparentize($color-white, 0.15);
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    background-color: transparent;
+    box-shadow: none;
+  }
 }

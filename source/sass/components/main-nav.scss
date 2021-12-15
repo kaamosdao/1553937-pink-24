@@ -8,6 +8,19 @@
 
   @include font(lighter);
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: $desktop-width;
+    min-height: 110px;
+    background-color: transparentize($color-black, 0.7);
+  }
 }
 
 .main-nav__header {
@@ -15,11 +28,34 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  min-height: 66px;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: transparentize($color-black, 0.7);
+
+  @media (min-width: $tablet-width) {
+    min-height: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    background-color: transparent;
+  }
 }
 
 .main-nav__toggle {
   margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

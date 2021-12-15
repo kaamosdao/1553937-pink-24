@@ -7,6 +7,15 @@
   background-color: $color-blue;
   background-image: url("../../img/background-house-mobile.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .page-header--contest {

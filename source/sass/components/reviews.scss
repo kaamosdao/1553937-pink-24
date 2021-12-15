@@ -6,6 +6,22 @@
 
 .reviews__list {
   margin-top: 50px;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-top: 150px;
+
+    &::after {
+      position: absolute;
+      width: 79px;
+      height: 63px;
+      top: -100px;
+      left: 50%;
+      margin-left: -39px;
+      background-image: url("../../img/quotes.png");
+      content: "";
+    }
+  }
 }
 
 .reviews__item {
@@ -20,21 +36,67 @@
   @include font(bold, 18px, 30px);
   font-style: normal;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+
+    @include font(bold, 20px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(bold, 24px, 30px);
+  }
 }
 
 .reviews__author-information {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 3;
+    margin: 0;
+
+    @include font(normal, 14px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 30px;
+
+    @include font(normal, 18px, 30px);
+  }
 }
 
 .reviews__text {
+  margin-left: auto;
+  margin-right: auto;
   width: 270px;
 
   @include font(normal, 14px, 30px);
   color: $color-blue-opaco;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    width: 620px;
+
+    @include font(normal, 18px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(normal, 18px, 30px);
+  }
 }
 
 .reviews__toggles {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

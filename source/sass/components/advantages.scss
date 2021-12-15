@@ -4,19 +4,66 @@
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: max-content max-content;
-  background-color: $color-grey;
+  margin-top: -20px;
+  min-height: 828px;
+  background-color: $color-white;
+  background-image: url("../../img/grey-background.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 268px 310px;
+    min-height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 940px;
+  }
 }
 
 .advantages__list {
-  grid-row: 1 / 2;
+  grid-column: 1 / 2;
   margin: 0;
-  padding: 87px 0 0 0;
+  padding: 120px 0 0 0;
   text-align: center;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.advantages__item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
 }
 
 .advantages__item:not(:last-child) {
   padding-bottom: 43px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 50px;
+  }
 }
 
 .advantages__title {
@@ -24,19 +71,36 @@
   padding-bottom: 24px;
 
   @include font(bold, 18px, 24px);
+
+  @media (min-width: $desktop-width) {
+    @include font(bold, 30px, 30px);
+  }
 }
 
 .advantages__text {
   margin: 0 auto 0 auto;
-  width: 250px;
 
   @include font(normal, 14px, 24px);
+
+  @media (min-width: $desktop-width) {
+    @include font(normal, 18px, 30px);
+  }
 }
 
 .advantages__screen {
-  grid-row: 2 / 3;
-  margin: 0;
+  grid-column: 1 / 2;
+  margin: 48px 0 0 0;
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }

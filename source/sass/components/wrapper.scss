@@ -1,5 +1,17 @@
+@import "../global/variables.scss";
+
 .wrapper {
   padding-left: 20px;
   padding-right: 20px;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+    width: 940px;
+  }
 }

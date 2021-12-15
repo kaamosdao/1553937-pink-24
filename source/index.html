@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -9,7 +10,7 @@
     <header class="page-header">
       <div class="main-header">
         <nav class="main-nav">
-          <div class="main-nav-header main-nav__header">
+          <div class="main-nav__header">
             <a class="main-header__logo" href="index.html">
               <svg
                 class="page-header__logo-image"
@@ -104,7 +105,7 @@
             </li>
           </ul>
           <p class="download__description">
-            Доступно для iPhone, iPad, Android,<br />Windows Phone, OS X,
+            Доступно для iPhone, iPad, Android, <br />Windows Phone, OS X,
             Windows 8
           </p>
         </div>
@@ -175,7 +176,14 @@
             </li>
           </ul>
         </div>
-        <div class="research">
+        <div class="research wrapper">
+          <img
+            class="research__image"
+            src="img/24hours.png"
+            width="298"
+            height="345"
+            alt="Иконка формы часов с цифрой 24."
+          />
           <div class="research__wrapper">
             <h3 class="research__title">Эффект на 24 часа!</h3>
             <p class="research__text">
@@ -192,7 +200,7 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="wrapper reviews-slider">
-          <div class="reviews__list reviews-slider__list">
+          <div class="reviews__list">
             <blockquote class="reviews__item reviews-slider__item">
               <cite class="reviews__author-name"> Николай Петров </cite>
               <p class="reviews__author-information">
@@ -367,9 +375,9 @@
             </a>
           </li>
         </ul>
-        <div class="footer-copyright">
-          <p class="footer-copyright__text">Разработано</p>
-          <a class="footer-copyright__logo" href="https://htmlacademy.ru/">
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright__text">Разработано</p>
+          <a class="page-footer__copyright__logo" href="https://htmlacademy.ru/">
             <span class="visually-hidden">HTML academy logo</span>
           </a>
         </div>
