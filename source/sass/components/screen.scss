@@ -5,11 +5,23 @@
   grid-template-columns: max-content;
   grid-template-rows: max-content;
   justify-content: center;
+  height: 277px;
+
   overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .screen__item {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  transform: translateY(40px);
+}
+
+.screen__item:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin-right: 125px;
+  }
 }

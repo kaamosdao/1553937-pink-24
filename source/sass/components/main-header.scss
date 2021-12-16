@@ -6,6 +6,10 @@
   @include font(lighter);
   color: $color-white;
   background-color: $color-blue;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .main-header__logo {

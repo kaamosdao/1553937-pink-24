@@ -7,6 +7,14 @@
 
 .prices-slider__plan {
   transform: translateX(-535px);
+
+  @media (min-width: $tablet-width) {
+    transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: none;
+  }
 }
 
 .prices-slider__toggle {
