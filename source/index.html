@@ -44,7 +44,7 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list main-nav__list--closed site-list">
             <li class="site-list__item site-list__item--current">
               <a class="site-list__link" href="#">Главная</a>
             </li>
@@ -383,5 +383,14 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      const mainNavButton = document.querySelector('.main-nav-button');
+      const navList = document.querySelector('.main-nav__list');
+      mainNavButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        navList.classList.toggle("main-nav__list--closed");
+        navList.classList.toggle("main-nav__list--opened");
+      });
+    </script>
   </body>
 </html>

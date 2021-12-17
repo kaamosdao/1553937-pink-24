@@ -5,12 +5,62 @@
   grid-template-rows: max-content max-content;
 }
 
+.post-panorama__wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+    margin-right: 130px;
+    width: 940px;
+  }
+}
+
+.post-panorama__button {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 140px;
+  min-height: 36px;
+
+  @include font(bold, 12px, 24px);
+  color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $color-highlight;
+  border: none;
+}
+
 .post-panorama__comment {
   display: block;
   box-sizing: border-box;
   padding: 25px 10px 25px 17px;
   min-height: 192px;
   background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 443px 117px;
+    grid-template-rows: max-content;
+    min-height: 121px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 763px 119px;
+    grid-template-rows: max-content;
+    min-height: 96px;
+  }
 }
 
 .post-panorama__name {
@@ -18,23 +68,39 @@
 
   @include font(bold, 14px, 24px);
   color: $color-blue-opaco;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+  }
 }
 
 .post-panorama__time {
-  @include font(lighter, 14px, 24px);
+  @include font(lighter, 12px, 24px);
   text-transform: uppercase;
 }
 
 .post-panorama__comment-text {
   @include font(normal, 14px, 24px);
   color: $color-blue-opaco;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .post-panorama__likes {
   padding-left: 48px;
   margin: 0;
 
-  @include font(normal, 14px, 24px);
+  @include font(normal, 12px, 24px);
   color: $color-highlight;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    padding: 0;
+  }
 }

@@ -1,5 +1,13 @@
 @import "../global/variables.scss";
 
+.filter-ending {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .filter-ending__additional-information {
   padding-top: 46px;
 
@@ -7,8 +15,24 @@
   color: $color-blue-opaco;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .filter-ending__additional-information-important {
   color: $color-highlight;
+}
+
+.filter-ending__additional-information-secondary {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }

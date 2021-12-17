@@ -1,8 +1,8 @@
 @import "../global/variables.scss";
 
 .wrapper-form {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
 
   @media (min-width: $tablet-width) {

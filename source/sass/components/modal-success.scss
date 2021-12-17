@@ -1,25 +1,66 @@
 @import "../global/variables.scss";
 
 .modal-success {
+  margin-left: auto;
+  margin-right: auto;
   width: 320px;
   min-height: 380px;
   background-color: $color-white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    min-height: 432px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    min-height: 377px;
+  }
 }
 
-.modal-success__wrapper,
+.modal-success__wrapper {
+  padding: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 49px 65px 0 65px;
+    width: 296px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
 .modal-success__wrapper-secondary {
   padding: 0 20px 0 20px;
-}
-
-.modal-success__wrapper-secondary {
   display: flex;
   align-items: center;
   box-sizing: border-box;
   width: 320px;
   min-height: 163px;
   background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 780px;
+    min-height: 163px;
+    background-color: $color-grey;
+  }
 }
 
 .modal-success__title {
@@ -29,6 +70,19 @@
   @include font(bold, 18px, 24px);
   color: $color-black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    width: 290px;
+
+    @include font(bold, 30px, 40px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .modal-success__text {
@@ -40,8 +94,24 @@
   @include font(normal, 14px, 24px);
   color: $color-blue-opaco;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 300px;
+
+    @include font(normal, 18px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+  }
 }
 
 .modal-success__button {
-  margin: 0;
+  @media (min-width: $desktop-width) {
+    width: 456px;
+    height: 59px;
+  }
 }

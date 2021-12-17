@@ -8,6 +8,16 @@
   @include font(normal, 14px, 30px);
   color: $color-blue-opaco;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+
+    @include font(normal, 18px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 572px;
+  }
 }
 
 .photo-gallery__panorama {
@@ -17,12 +27,32 @@
 .photo-gallery__list {
   display: grid;
   grid-gap: 20px;
-  margin: 0;
+  margin: 0 auto 0 auto;
   padding: 0;
+  width: 280px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 300px 300px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 300px 300px 300px;
+    width: 940px;
+  }
 }
 
 .photo-gallery__item {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 301px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 555px;
+  }
 }

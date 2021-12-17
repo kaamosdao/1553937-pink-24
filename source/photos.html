@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Фотографии</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -43,7 +44,7 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list main-nav__list--closed site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -72,6 +73,9 @@
           не хватает ваших?
         </p>
         <div class="photo-gallery__panorama post-panorama">
+          <div class="post-panorama__wrapper">
+            <a class="post-panorama__button" href="#">Панорама дня</a>
+          </div>
           <img
             class="photo-gallery__picture"
             src="img/photos-gallary/panorama-mobile.jpg"
@@ -246,7 +250,6 @@
                 <div
                   class="
                     upload-filter__crop-range-scale
-                    upload-filter__range-scale
                     upload-filter__range-scale--current
                   "
                 >
@@ -271,8 +274,7 @@
                 ></button>
                 <div
                   class="
-                    upload-filter__fill-range-scale upload-filter__range-scale
-                  "
+                    upload-filter__fill-range-scale"
                 >
                   <div
                     class="upload-filter__fill-range-bar"
@@ -296,7 +298,6 @@
                 <div
                   class="
                     upload-filter__contrast-range-scale
-                    upload-filter__range-scale
                   "
                 >
                   <div
@@ -315,10 +316,10 @@
               </li>
             </ul>
             <div class="upload__buttons">
-              <button class="upload__buttons-upload" type="submit">
+              <button class="upload__button-upload" type="submit">
                 Запостить
               </button>
-              <button class="upload__buttons-reset" type="reset">Отмена</button>
+              <button class="upload__button-reset" type="reset">Отмена</button>
             </div>
           </form>
         </div>
@@ -354,5 +355,14 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      const mainNavButton = document.querySelector('.main-nav-button');
+      const navList = document.querySelector('.main-nav__list');
+      mainNavButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        navList.classList.toggle("main-nav__list--closed");
+        navList.classList.toggle("main-nav__list--opened");
+      });
+    </script>
   </body>
 </html>

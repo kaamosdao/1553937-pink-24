@@ -59,3 +59,11 @@
     display: block;
   }
 }
+
+.main-nav__list--closed {
+  display: none;
+}
+
+.main-nav__list--opened {
+  display: block;
+}

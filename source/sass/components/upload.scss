@@ -4,23 +4,84 @@
   @include font(normal, 14px, 30px);
   color: $color-blue-opaco;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font(normal, 18px, 30px);
+  }
 }
 
 .upload__wrapper {
   padding: 20px 20px 0 20px;
   background: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 57px 0;
+    width: 940px;
+  }
+}
+
+.upload__form {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 300px 45px 275px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 300px 90px 410px;
+    width: 800px;
+  }
+}
+
+.upload__image {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+}
+
+.upload__filter {
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
 }
 
 .upload__buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 75px;
   padding-top: 38px;
   padding-bottom: 41px;
   border-top: 3px solid transparentize($color-blue-opaco, 0.9);
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin-top: 50px;
+    padding: 0;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
 }
 
-.upload__buttons-upload {
+.upload__button-upload {
   box-sizing: border-box;
   margin-bottom: 12px;
   padding: 10px;
@@ -31,9 +92,18 @@
   border: 3px solid $color-highlight;
   color: $color-highlight;
   border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 183px;
+  }
 }
 
-.upload__buttons-reset {
+.upload__button-reset {
   box-sizing: border-box;
   padding: 10px;
   width: 280px;
@@ -43,4 +113,12 @@
   border: 3px solid transparentize($color-blue-opaco, 0.9);
   color: transparentize($color-blue-opaco, 0.9);
   border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
 }
