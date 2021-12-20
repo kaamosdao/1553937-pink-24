@@ -1,8 +1,15 @@
 @import "../global/variables.scss";
 
 .os-name-filter {
+  box-sizing: border-box;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 0 54px 60px;
+    border: 2px solid $color-dark-grey;
+    border-radius: 1px;
+  }
 }
 
 .os-name-filter__title {
@@ -13,6 +20,13 @@
   color: $color-highlight;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    width: 318px;
+
+    @include font(normal, 14px, 30px);
+  }
 }
 
 .os-name-filter__list {

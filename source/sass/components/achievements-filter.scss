@@ -1,8 +1,15 @@
 @import "../global/variables.scss";
 
 .achievements-filter {
+  box-sizing: border-box;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 54px 54px 60px;
+    border: 2px solid $color-dark-grey;
+    border-radius: 1px;
+  }
 }
 
 .achievements-filter__title {
@@ -13,14 +20,40 @@
   color: $color-highlight;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+
+    @include font(normal, 18px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+  }
 }
 
 .achievements-filter__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 47px;
+    column-gap: 57px;
+    grid-auto-flow: column;
+  }
 }
 
 .achievements-filter__item:not(:last-child) {
   padding-bottom: 47px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }

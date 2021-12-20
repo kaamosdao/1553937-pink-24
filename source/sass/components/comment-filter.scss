@@ -1,8 +1,19 @@
 @import "../global/variables.scss";
 
 .comment-filter {
+  box-sizing: border-box;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 47px 60px 53px 60px;
+    border: 2px solid $color-dark-grey;
+    border-radius: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 44px 60px;
+  }
 }
 
 .comment-filter__title {
@@ -13,6 +24,13 @@
   color: $color-highlight;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    width: 260px;
+
+    @include font(normal, 14px, 30px);
+  }
 }
 
 .comment-filter__textarea {
@@ -27,4 +45,14 @@
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    height: 189px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 816px;
+    height: 124px;
+  }
 }

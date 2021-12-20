@@ -11,15 +11,28 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .full-name-filter__item {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .full-name-filter__item:not(:last-child) {
   padding-bottom: 29px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .full-name-filter__lable {
@@ -28,6 +41,10 @@
   @include font(normal, 14px, 30px);
   color: $color-highlight;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .full-name-filter__input {

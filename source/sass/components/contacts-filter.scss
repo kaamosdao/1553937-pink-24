@@ -1,8 +1,36 @@
 @import "../global/variables.scss";
 
 .contacts-filter {
+  box-sizing: border-box;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 46px 60px 37px 60px;
+    border: 2px solid $color-dark-grey;
+    border-radius: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 816px;
+  }
+}
+
+.contacts-filter__title {
+  display: none;
+
+  @include font(normal, 14px, 30px);
+  color: $color-highlight;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .contacts-filter__list {
@@ -11,15 +39,31 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .contacts-filter__item {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    width: 371px;
+
+    &:not(:last-child) {
+      margin-right: 74px;
+    }
+  }
 }
 
 .contacts-filter__item:not(:last-child) {
   padding-bottom: 29px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .contacts-filter__lable {
@@ -28,6 +72,10 @@
   @include font(normal, 14px, 30px);
   color: $color-highlight;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .contacts-filter__input {
@@ -39,4 +87,8 @@
   color: $color-blue-opaco;
   border: 2px solid $color-dark-grey;
   border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }

@@ -11,26 +11,17 @@
   @include font(normal, 14px, 30px);
   color: $color-blue-opaco;
   text-align: center;
-}
 
-.filter__full-name {
-  padding: 42px 0;
-}
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    width: 490px;
 
-.filter__achievements {
-  padding: 42px 0;
-  background-color: $color-grey;
-}
+    @include font(normal, 18px, 30px);
+  }
 
-.filter__os-name {
-  padding: 42px 0;
-  background-color: $color-grey;
-}
-
-.filter__contacts {
-  padding: 42px 0;
-}
-
-.filter__comment {
-  padding: 42px 0 52px;
+  @media (min-width: $desktop-width) {
+    width: 756px;
+  }
 }
