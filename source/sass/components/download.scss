@@ -6,11 +6,16 @@
   @media (min-width: $tablet-width) {
     width: 300px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+    width: 940px;
+  }
 }
 
 .download__title {
   margin: 0 auto 0 auto;
-  padding-top: 95px;
+  padding-top: 29px;
   padding-bottom: 25px;
   width: 280px;
 
@@ -18,13 +23,14 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding-top: 212px;
+    padding-top: 102px;
     width: 240px;
 
     @include font(lighter, 40px, 48px);
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 35px;
     padding-top: 95px;
 
     @include font(lighter, 50px, 68px);
@@ -32,7 +38,7 @@
 }
 
 .download__button {
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
 
   @media (min-width: $tablet-width) {
     z-index: 2;
@@ -59,7 +65,6 @@
 
   @media (min-width: $tablet-width) {
     z-index: 2;
-
     padding-top: 38px;
 
     @include font(lighter, 18px, 24px);
@@ -70,22 +75,47 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
 }
 
-.download__img {
+.download__img-wrapper {
+  margin-left: auto;
+  margin-right: auto;
   width: 320px;
   height: 286px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     z-index: 1;
     position: absolute;
-    bottom: 120px;
-    right: 50px;
-    transform: scale(1.85);
+    left: 0;
+    bottom: 0;
+    width: 660px;
+    height: 545px;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 120px;
-    right: 150px;
+    bottom: 0;
+    right: 0;
+    width: 1050px;
+    height: 645px;
+  }
+}
+
+.download__img {
+  display: block;
+  transform: scale(0.5) translateX(-890px) translateY(-320px);
+
+  @media (min-width: $tablet-width) {
+    transform: scale(0.6) translateX(-190px) translateY(20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    height: 645px;
+    transform: none;
   }
 }

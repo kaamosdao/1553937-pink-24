@@ -3,12 +3,21 @@
 .main-header {
   z-index: 2;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  width: auto;
 
   @include font(lighter);
   color: $color-white;
-  background-color: $color-blue;
+  background-color: transparentize($color-black, 0.7);
+
+  @media (min-width: $tablet-width) {
+    min-width: 660px;
+  }
 
   @media (min-width: $desktop-width) {
+    min-width: 1200px;
     background-color: transparent;
   }
 }
@@ -18,4 +27,51 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    align-items: baseline;
+  }
+}
+
+.main-header__logo-glasses-tablet {
+  display: none;
+  fill: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-pink {
+  fill: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-glasses-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.main-header__logo-pink-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-left: 12px;
+  }
 }

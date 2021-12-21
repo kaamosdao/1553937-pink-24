@@ -1,22 +1,32 @@
 @import "../global/variables.scss";
 
 .advantages {
+  min-width: 320px;
+  background-color: $color-white;
+  background-image: url("../../img/grey-background.png");
+  background-repeat: no-repeat;
+}
+
+.advantages__wrapper {
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: max-content max-content;
   margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
   min-height: 828px;
-  background-color: $color-white;
-  background-image: url("../../img/grey-background.png");
-  background-repeat: no-repeat;
+
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 268px 310px;
+    width: 620px;
     min-height: 509px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 940px;
+    width: 940px;
   }
 }
 
@@ -82,8 +92,22 @@
 
   @include font(normal, 14px, 24px);
 
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: block;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     @include font(normal, 18px, 30px);
+
+    br {
+      display: none;
+    }
   }
 }
 

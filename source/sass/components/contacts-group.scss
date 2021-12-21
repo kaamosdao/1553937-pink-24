@@ -77,3 +77,16 @@
   color: $color-highlight;
   text-decoration: none;
 }
+
+.contacts-group__phone-number,
+.contacts-group__mail-name {
+  &:hover {
+    color: $color-black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}

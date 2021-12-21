@@ -1,6 +1,7 @@
 @import "../global/variables.scss";
 
 .prices {
+  min-width: 320px;
   background-color: $color-white;
   background-image: url("../../img/grey-background.png");
   background-repeat: no-repeat;
