@@ -4,8 +4,6 @@
   display: flex;
   justify-content: space-around;
   width: 178px;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
@@ -16,4 +14,31 @@
   background-color: $color-white;
   border: 3px solid transparentize($color-blue-opaco, 0.9);
   border-radius: 50%;
+
+  &:hover {
+    border: 3px solid $color-blue-opaco;
+  }
+
+  &:active {
+    opacity: 0.1;
+    border: 3px solid $color-blue-opaco;
+  }
+}
+
+.social-list__link--twitter {
+  background-image: url("../../img/logo-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-list__link--facebook {
+  background-image: url("../../img/logo-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-list__link--youtube {
+  background-image: url("../../img/logo-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

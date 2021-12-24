@@ -4,8 +4,21 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-grey;
+  }
+}
+
+.research__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,6 +26,7 @@
     margin-top: 0;
     padding-top: 54px;
     padding-bottom: 50px;
+    width: 940px;
     background-color: $color-grey;
   }
 }
@@ -27,7 +41,7 @@
   }
 }
 
-.research__wrapper {
+.research__description {
   @media (min-width: $tablet-width) {
     width: 300px;
     margin-top: 50px;
@@ -50,11 +64,14 @@
   @media (min-width: $desktop-width) {
     @include font(bold, 30px, 30px);
     color: $color-black;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .research__text {
-
   color: $color-blue-opaco;
 
   @media (min-width: $tablet-width) {
@@ -68,6 +85,16 @@
 
 .research__show-more {
   color: $color-highlight;
+
+  &:hover {
+    color: $color-black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
 
   @media (min-width: $tablet-width) {
     @include font(normal, 14px, 24px);

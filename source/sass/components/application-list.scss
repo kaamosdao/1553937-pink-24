@@ -8,3 +8,13 @@
   width: 204px;
   list-style: none;
 }
+
+.application-list__link {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

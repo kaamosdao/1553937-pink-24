@@ -1,5 +1,15 @@
 @import "../global/variables.scss";
 
+.reviews-slider {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+  }
+}
+
 .reviews-slider__toggle {
   padding: 0;
   width: 6px;
@@ -8,6 +18,14 @@
   border-radius: 50%;
   background-color: transparentize($color-blue-opaco, 0.7);
   cursor: pointer;
+
+  &:hover {
+    background-color: transparentize($color-blue-opaco, 0.4);
+  }
+
+  &:active {
+    background-color: transparentize($color-blue-opaco, 0.9);
+  }
 }
 
 .reviews-slider__toggle:not(:last-child) {
@@ -19,4 +37,74 @@
   height: 12px;
   background-color: $color-white;
   border: 3px solid $color-blue-opaco;
+  pointer-events: none;
+}
+
+.reviews-slider__left-arrow {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    border: none;
+    opacity: 0.3;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 41px;
+      top: 200px;
+      background-image: url("../../img/left-arrow.svg");
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}
+
+.reviews-slider__right-arrow {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    border: none;
+    opacity: 0.3;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 22px;
+      height: 41px;
+      top: 200px;
+      background-image: url("../../img/left-arrow.svg");
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
 }

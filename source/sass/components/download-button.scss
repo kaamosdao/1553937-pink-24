@@ -13,4 +13,21 @@
   text-align: center;
   border: 3px solid $color-white;
   border-radius: 29px;
+
+  &:hover {
+    color: $color-highlight;
+    background-color: $color-white;
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+  }
+
+  &:active {
+    color: transparentize($color-highlight, 0.7);
+    background-color: $color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
 }

@@ -1,6 +1,7 @@
 @import "../global/variables.scss";
 
 .contacts {
+  min-width: 320px;
   background-color: $color-white;
 }
 
@@ -18,19 +19,40 @@
   }
 }
 
-.contacts__image-wrapper {
+.contacts__map-wrapper {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
 
-  &::after {
-    position: absolute;
-    display: block;
-    width: 16px;
-    height: 16px;
-    top: 97px;
-    left: 144px;
-    border: 10px solid $color-white;
-    border-radius: 50%;
-    background-color: $color-highlight;
-    content: "";
+  // &::after {
+  //   position: absolute;
+  //   display: block;
+  //   width: 16px;
+  //   height: 16px;
+  //   top: 97px;
+  //   left: 144px;
+  //   border: 10px solid $color-white;
+  //   border-radius: 50%;
+  //   background-color: $color-highlight;
+  //   content: "";
+  // }
+}
+
+.contacts__map {
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-width: 320px;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
   }
 }

@@ -1,6 +1,9 @@
 @import "../global/variables.scss";
 
 .information__intro {
+  margin-left: auto;
+  margin-right: auto;
+
   @include font(lighter, 24px, 29px);
   color: $color-blue-opaco;
   text-align: center;
