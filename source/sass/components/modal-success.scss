@@ -102,10 +102,18 @@
     width: 300px;
 
     @include font(normal, 18px, 24px);
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 380px;
+
+    br {
+      display: none;
+    }
   }
 }
 

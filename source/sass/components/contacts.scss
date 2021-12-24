@@ -20,26 +20,6 @@
 }
 
 .contacts__map-wrapper {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 320px;
-
-  // &::after {
-  //   position: absolute;
-  //   display: block;
-  //   width: 16px;
-  //   height: 16px;
-  //   top: 97px;
-  //   left: 144px;
-  //   border: 10px solid $color-white;
-  //   border-radius: 50%;
-  //   background-color: $color-highlight;
-  //   content: "";
-  // }
-}
-
-.contacts__map {
   border: none;
   display: block;
   margin-left: auto;

@@ -35,7 +35,7 @@
 
 .page-header__text {
   margin: 0 auto 0 auto;
-  padding-top: 95px;
+  padding-top: 36px;
   width: 228px;
 
   @include font(lighter, 24px, 33px);
@@ -43,7 +43,6 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding-top: 191px;
     padding-bottom: 74px;
     width: 620px;
 

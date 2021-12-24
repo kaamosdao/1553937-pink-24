@@ -1,12 +1,14 @@
 @import "../global/variables.scss";
 
 .filter {
+  min-width: 320px;
   background-color: $color-white;
 }
 
 .filter__information {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 44px;
+  width: 280px;
 
   @include font(normal, 14px, 30px);
   color: $color-blue-opaco;
@@ -23,5 +25,13 @@
 
   @media (min-width: $desktop-width) {
     width: 756px;
+  }
+}
+
+.filter__information-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }

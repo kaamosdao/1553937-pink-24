@@ -22,3 +22,16 @@ $color-green: #2aab6d;
 $tablet-width: 660px;
 $desktop-width: 1200px;
 $mobile-width-only: 659px;
+
+// STATES
+
+@mixin input-states {
+  &:hover {
+    border-color: $color-blue-opaco;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-highlight;
+  }
+}
