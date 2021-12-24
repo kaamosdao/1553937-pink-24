@@ -46,6 +46,8 @@
   border-radius: 1px;
   resize: none;
 
+  @include input-states;
+
   @media (min-width: $tablet-width) {
     width: 496px;
     height: 189px;

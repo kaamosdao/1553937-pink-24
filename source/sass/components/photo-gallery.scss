@@ -1,5 +1,9 @@
 @import "../global/variables.scss";
 
+.photo-gallery {
+  min-width: 320px;
+}
+
 .photo-gallery__text {
   padding: 54px 0 60px 0;
   margin: 0 auto;
@@ -22,6 +26,12 @@
 
 .photo-gallery__panorama {
   margin-bottom: 20px;
+}
+
+.photo-gallery__picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .photo-gallery__list {

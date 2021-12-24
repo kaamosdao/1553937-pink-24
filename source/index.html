@@ -440,18 +440,7 @@
             </p>
           </div>
         </div>
-        <div class="contacts__map-wrapper">
-          <iframe
-            class="contacts__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1679.1257922348698!2d30.315527963214834!3d59.968170924581855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1640088394365!5m2!1sen!2sru"
-            width="320"
-            height="200"
-            allowfullscreen=""
-            loading="lazy"
-            title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
-          ></iframe>
-        </div>
-        <!-- <div class="contacts__map" id="map"></div> -->
+        <div class="contacts__map-wrapper"></div>
       </section>
     </main>
     <footer class="page-footer">
@@ -614,24 +603,24 @@
         mainNav.classList.toggle("main-nav--opened");
       });
 
-      // function initMap() {
-      //   const uluru = { lat: 59.9683, lng: 30.3175 };
-      //   const options = {
-      //     zoom: 2,
-      //     center: uluru,
-      //   }
-      //   const map = new google.maps.Map(document.querySelector("#map"), options);
-      //   const marker = new google.maps.Marker({
-      //     position: uluru,
-      //     map: map,
-      //     icon: 'img/map-marker.png'
-      //   });
-      // };
+      function initMap() {
+        const uluru = { lat: 59.9683, lng: 30.3175 };
+        const options = {
+          zoom: 16,
+          center: uluru,
+        }
+        const map = new google.maps.Map(document.querySelector(".contacts__map-wrapper"), options);
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: 'img/marker.svg'
+        });
+      };
     </script>
-    <!-- <script
+    <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrf-r5tPBdjt5h7hOOjlkn7sa0mbAyYro&callback=initMap&libraries=&v=weekly"
       async
       defer
-    ></script> -->
+    ></script>
   </body>
 </html>

@@ -56,4 +56,6 @@
   color: $color-blue-opaco;
   border: 2px solid $color-dark-grey;
   border-radius: 1px;
+
+  @include input-states;
 }

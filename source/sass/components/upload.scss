@@ -1,5 +1,9 @@
 @import "../global/variables.scss";
 
+.upload {
+  min-width: 320px;
+}
+
 .upload__text {
   @include font(normal, 14px, 30px);
   color: $color-blue-opaco;
@@ -44,6 +48,11 @@
 }
 
 .upload__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -92,6 +101,16 @@
   border: 3px solid $color-highlight;
   color: $color-highlight;
   border-radius: 30px;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-highlight;
+  }
+
+  &:active {
+    color: transparentize($color-white, 0.7);
+  }
 
   @media (min-width: $tablet-width) {
     width: 260px;
@@ -108,11 +127,23 @@
   padding: 10px;
   width: 280px;
   min-height: 55px;
+  cursor: pointer;
 
   @include font(bold, 18px, 18px);
   border: 3px solid transparentize($color-blue-opaco, 0.9);
   color: transparentize($color-blue-opaco, 0.9);
   border-radius: 30px;
+
+  &:hover {
+    color: transparentize($color-blue-opaco, 0.7);
+    border-color: transparentize($color-blue-opaco, 0.7);
+  }
+
+  &:active {
+    color: transparentize($color-white, 0.7);
+    background-color: transparentize($color-blue-opaco, 0.7);
+    border-color: transparentize($color-blue-opaco, 1);
+  }
 
   @media (min-width: $tablet-width) {
     width: 260px;

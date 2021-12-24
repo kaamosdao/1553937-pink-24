@@ -2,6 +2,25 @@
 
 .control-checkbox {
   position: relative;
+
+  &:hover {
+    .control-checkbox__mark {
+      border-color: $color-blue-opaco;
+    }
+  }
+
+  &:active {
+    .control-checkbox__mark {
+      border-color: $color-highlight;
+    }
+  }
+
+  &:focus-within {
+    .control-checkbox__mark {
+      outline: none;
+      border-color: $color-highlight;
+    }
+  }
 }
 
 .control-checkbox__label {

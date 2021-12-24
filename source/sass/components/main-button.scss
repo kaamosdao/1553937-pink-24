@@ -12,4 +12,19 @@
   background-color: $color-green;
   border: 2px solid #2aab6d;
   border-radius: 1px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+    border: 2px solid #1c9b5e;
+  }
+
+  &:active {
+    color: transparentize($color-white, 0.7);
+  }
+
+  &:disabled {
+    background-color: $color-dark-grey;
+    border: 2px solid $color-dark-grey;
+  }
 }

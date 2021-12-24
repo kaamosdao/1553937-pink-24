@@ -3,6 +3,8 @@
 .post-panorama {
   display: grid;
   grid-template-rows: max-content max-content;
+  width: 100%;
+  overflow: hidden;
 }
 
 .post-panorama__wrapper {
@@ -16,8 +18,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 130px;
-    margin-right: 130px;
     width: 940px;
   }
 }
@@ -40,6 +40,14 @@
   text-align: center;
   background-color: $color-highlight;
   border: none;
+
+  &:hover {
+    background-color: transparentize($color-highlight, 0.3);
+  }
+
+  &:active {
+    background-color: transparentize($color-highlight, 0.7);
+  }
 }
 
 .post-panorama__comment {
@@ -53,6 +61,8 @@
     display: grid;
     grid-template-columns: 443px 117px;
     grid-template-rows: max-content;
+    padding-left: 30px;
+    padding-right: 30px;
     min-height: 121px;
   }
 
@@ -88,19 +98,45 @@
     grid-row: 2 / 3;
     padding: 0;
     margin: 0;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .post-panorama__likes {
-  padding-left: 48px;
+  position: relative;
+  padding-left: 31px;
   margin: 0;
 
   @include font(normal, 12px, 24px);
   color: $color-highlight;
   text-transform: uppercase;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("../../img/heart.svg");
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     padding: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: auto;
+      right: 2px;
+      width: 13px;
+      height: 12px;
+      background-image: url("../../img/heart.svg");
+    }
   }
 }
