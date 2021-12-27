@@ -6,22 +6,33 @@
   min-height: 733px;
   color: $color-white;
   background-color: $color-blue;
-  background-image: url("../../img/background-house.png");
+  background-image: url("../../img/background-house/index-background-house-mobile.png");
   background-repeat: no-repeat;
-  background-position: -250px 0;
-  background-size: auto 65%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background-house/index-background-house-mobile@2x.png");
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
     min-width: $tablet-width;
-    background-position: -280px 0;
-    background-size: cover;
+    background-image: url("../../img/background-house/index-background-house-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-house/index-background-house-tablet@2x.png");
+      background-size: 1200px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
-    background-position: -600px -420px;
-    background-size: 200%;
+    background-image: url("../../img/background-house/index-background-house-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-house/index-background-house-desktop@2x.png");
+      background-size: 2560px auto;
+    }
   }
 }
 

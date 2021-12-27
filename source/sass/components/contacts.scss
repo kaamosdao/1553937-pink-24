@@ -20,6 +20,7 @@
 }
 
 .contacts__map-wrapper {
+  position: relative;
   border: none;
   display: block;
   margin-left: auto;
@@ -34,5 +35,33 @@
 
   @media (min-width: $desktop-width) {
     height: 502px;
+  }
+
+  &::before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    bottom: 167px;
+    margin-left: -430px;
+    width: 1200px;
+    height: 123px;
+    background-image: url("../../img/triangle-white-footer-mobile.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      bottom: 306px;
+      margin-left: -265px;
+      width: 1200px;
+      height: 123px;
+      background-image: url("../../img/triangle-white-footer-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 399px;
+      margin-left: -120px;
+      width: 1439px;
+      height: 123px;
+      background-image: url("../../img/triangle-white-footer-desktop.svg");
+    }
   }
 }

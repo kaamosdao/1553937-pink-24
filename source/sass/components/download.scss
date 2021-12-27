@@ -107,15 +107,13 @@
 
 .download__img {
   display: block;
-  transform: scale(0.5) translateX(-890px) translateY(-320px);
-
   @media (min-width: $tablet-width) {
-    transform: scale(0.6) translateX(-190px) translateY(20px);
+    width: 660px;
+    height: 545px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
     height: 645px;
-    transform: none;
   }
 }

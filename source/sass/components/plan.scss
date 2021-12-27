@@ -1,6 +1,7 @@
 @import "../global/variables.scss";
 
 .plan {
+  position: relative;
   width: 1112px;
   border-collapse: collapse;
 
@@ -10,6 +11,49 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
+  }
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 74px;
+    height: 74px;
+    background-image: url("../../img/hit-ribbon-mobile.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/hit-ribbon-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/hit-ribbon-desktop.svg");
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "ХИТ";
+    top: 14px;
+    left: 50%;
+    margin-left: 15px;
+    color: $color-white;
+    transform: rotate(-45deg);
+
+    @include font(normal, 14px, 30px);
+
+    @media (min-width: $tablet-width) {
+      top: 8px;
+      margin-left: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 13px;
+      margin-left: 16px;
+    }
   }
 }
 

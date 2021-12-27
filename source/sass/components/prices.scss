@@ -3,9 +3,17 @@
 .prices {
   min-width: 320px;
   background-color: $color-white;
-  background-image: url("../../img/grey-background.png");
+  background-image: url("../../img/grey-background/grey-background-2-mobile.png");
   background-repeat: no-repeat;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/grey-background/grey-background-2-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/grey-background/grey-background-2-desktop.png");
+  }
 }
 
 .prices__plan {

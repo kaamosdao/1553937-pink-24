@@ -139,13 +139,30 @@
       <div class="download">
         <h1 class="download__title">Взгляните на жизнь иначе!</h1>
         <div class="download__img-wrapper">
-          <img
-            class="download__img"
-            src="img/hand-with-phone.png"
-            width="1050"
-            height="645"
-            alt="Рука с телефоном"
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                img/hand-with-phone/hand-with-phone-desktop.png 1x,
+                img/hand-with-phone/hand-with-phone-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 660px)"
+              srcset="
+                img/hand-with-phone/hand-with-phone-tablet.png 1x,
+                img/hand-with-phone/hand-with-phone-tablet@2x.png 2x
+              "
+            />
+            <img
+              class="download__img"
+              src="img/hand-with-phone/hand-with-phone-mobile.png 1x"
+              srcset="img/hand-with-phone/hand-with-phone-mobile@2x.png 2x"
+              width="320"
+              height="286"
+              alt="Рука с телефоном"
+            />
+          </picture>
         </div>
         <div class="download-wrapper">
           <a class="download__button download-button" href="#">
@@ -234,41 +251,99 @@
             </ul>
             <ul class="advantages__screen screen">
               <li class="screen__item">
-                <img
-                  src="img/iPhone-screen-1-mobile.png"
-                  width="157"
-                  height="320"
-                  alt="Черно-белый экран с фотографией мусроки"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/iPhone-screen/iPhone-screen-1-desktop.png    1x,
+                      img/iPhone-screen/iPhone-screen-1-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/iPhone-screen/iPhone-screen-1-tablet.png    1x,
+                      img/iPhone-screen/iPhone-screen-1-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="img/iPhone-screen/iPhone-screen-1-mobile.png"
+                    srcset="img/iPhone-screen/iPhone-screen-1-mobile@2x.png 2x"
+                    width="157"
+                    height="320"
+                    alt="Черно-белый экран с фотографией мусроки"
+                  />
+                </picture>
               </li>
               <li class="screen__item">
-                <img
-                  src="img/iPhone-screen-2-mobile.png"
-                  width="157"
-                  height="320"
-                  alt="Розовый экран с фотографией мусроки"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/iPhone-screen/iPhone-screen-2-desktop.png    1x,
+                      img/iPhone-screen/iPhone-screen-2-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/iPhone-screen/iPhone-screen-2-tablet.png    1x,
+                      img/iPhone-screen/iPhone-screen-2-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="img/iPhone-screen/iPhone-screen-2-mobile.png"
+                    srcset="img/iPhone-screen/iPhone-screen-2-mobile@2x.png 2x"
+                    width="157"
+                    height="320"
+                    alt="Розовый экран с фотографией мусроки"
+                  />
+                </picture>
               </li>
               <li class="screen__item">
-                <img
-                  src="img/iPhone-screen-3-mobile.png"
-                  width="157"
-                  height="320"
-                  alt="Розовый экран с фотографией мусроки и улыбающийся смайлик с надписью Всем привет!"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/iPhone-screen/iPhone-screen-3-desktop.png    1x,
+                      img/iPhone-screen/iPhone-screen-3-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/iPhone-screen/iPhone-screen-3-tablet.png    1x,
+                      img/iPhone-screen/iPhone-screen-3-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="img/iPhone-screen/iPhone-screen-3-mobile.png"
+                    srcset="img/iPhone-screen/iPhone-screen-3-mobile@2x.png 2x"
+                    width="157"
+                    height="320"
+                    alt="Розовый экран с фотографией мусроки и улыбающийся смайлик с надписью Всем привет!"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
         </div>
         <div class="research">
           <div class="research__wrapper">
-            <img
-              class="research__image"
-              src="img/24hours.png"
-              width="298"
-              height="345"
-              alt="Иконка формы часов с цифрой 24."
-            />
+            <p class="research__image-text">24</p>
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/24hours-desktop.svg"
+              />
+              <img
+                class="research__image"
+                src="img/24hours-tablet.svg"
+                width="238"
+                height="276"
+                alt="Иконка формы часов с цифрой 24."
+              />
+            </picture>
             <div class="research__description">
               <h3 class="research__title">Эффект <br />на 24 часа!</h3>
               <p class="research__text">
@@ -604,18 +679,21 @@
       });
 
       function initMap() {
-        const uluru = { lat: 59.9683, lng: 30.3175 };
+        const uluru = { lat: 59.9388, lng: 30.3235 };
         const options = {
           zoom: 16,
-          center: uluru,
-        }
-        const map = new google.maps.Map(document.querySelector(".contacts__map-wrapper"), options);
+          center: { lat: 59.9391, lng: 30.3235 },
+        };
+        const map = new google.maps.Map(
+          document.querySelector(".contacts__map-wrapper"),
+          options
+        );
         const marker = new google.maps.Marker({
           position: uluru,
           map: map,
-          icon: 'img/marker.svg'
+          icon: "img/marker.svg",
         });
-      };
+      }
     </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrf-r5tPBdjt5h7hOOjlkn7sa0mbAyYro&callback=initMap&libraries=&v=weekly"
