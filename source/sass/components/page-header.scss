@@ -8,6 +8,7 @@
   background-color: $color-blue;
   background-image: url("../../img/background-house/index-background-house-mobile.png");
   background-repeat: no-repeat;
+  background-position: top;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/background-house/index-background-house-mobile@2x.png");

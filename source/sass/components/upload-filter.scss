@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     grid-gap: 10px;
   }
 }

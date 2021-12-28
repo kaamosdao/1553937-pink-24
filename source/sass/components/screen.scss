@@ -9,9 +9,14 @@
 
   overflow: hidden;
 
+  @media (min-width: $tablet-width) {
+    height: 481px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 20px;
+    height: 301px;
   }
 }
 
@@ -21,10 +26,15 @@
   grid-row: 1 / -1;
 
   @media (min-width: $desktop-width) {
+    grid-column: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+
     &::before {
       position: absolute;
       content: "";
-      bottom: -10px;
+      bottom: 72px;
       width: 300px;
       height: 17px;
       background: linear-gradient(
@@ -39,8 +49,18 @@
   }
 }
 
-.screen__item:not(:last-child) {
+.screen__item img {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 547px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 186px;
+    height: 382px;
   }
 }

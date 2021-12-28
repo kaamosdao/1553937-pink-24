@@ -5,6 +5,7 @@
   background-color: $color-white;
   background-image: url("../../img/grey-background/grey-background-2-mobile.png");
   background-repeat: no-repeat;
+  background-position: top;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
