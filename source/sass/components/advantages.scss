@@ -3,20 +3,28 @@
 .advantages {
   min-width: 320px;
   background-color: $color-white;
-  background-image: url("../../img/grey-background.png");
+  background-image: url("../../img/grey-background/grey-background-1-mobile.png");
   background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/grey-background/grey-background-1-tablet.png");
+    background-position: top;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/grey-background/grey-background-1-desktop.png");
+  }
 }
 
 .advantages__wrapper {
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: max-content max-content;
-  margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
   width: 280px;
   min-height: 828px;
-
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 268px 310px;
@@ -41,48 +49,56 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     text-align: left;
+    margin-left: 42px;
+    padding-top: 103px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    margin: 0;
     padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 20px;
   }
 }
 
 .advantages__item {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 250px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
     width: 300px;
+    justify-self: center;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    width: 230px;
+    width: 300px;
   }
 }
 
 .advantages__item:not(:last-child) {
-  padding-bottom: 43px;
+  padding-bottom: 30px;
 
   @media (min-width: $desktop-width) {
-    margin-right: 50px;
+    padding-bottom: 0;
   }
 }
 
 .advantages__title {
   margin: 0 auto 0 auto;
-  padding-bottom: 24px;
+  padding-bottom: 15px;
 
   @include font(bold, 18px, 24px);
 
   @media (min-width: $desktop-width) {
+    width: 230px;
+
     @include font(bold, 30px, 30px);
   }
 }
@@ -103,6 +119,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 230px;
+
     @include font(normal, 18px, 30px);
 
     br {
@@ -113,7 +131,7 @@
 
 .advantages__screen {
   grid-column: 1 / 2;
-  margin: 48px 0 0 0;
+  margin: 35px 0 0 0;
   padding: 0;
 
   list-style-type: none;

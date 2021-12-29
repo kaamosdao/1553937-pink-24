@@ -32,6 +32,16 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 509px;
+  }
 }
 
 .photo-gallery__list {

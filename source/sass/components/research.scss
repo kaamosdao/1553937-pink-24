@@ -13,6 +13,8 @@
 }
 
 .research__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 54px;
@@ -32,12 +34,27 @@
 }
 
 .research__image {
-  @media (min-width: $tablet-width) {
-    transform: scale(0.9);
-  }
+  display: block;
 
   @media (min-width: $desktop-width) {
-    transform: scale(1);
+    width: 298px;
+    height: 345px;
+  }
+}
+
+.research__image-text {
+  position: absolute;
+  left: 10%;
+  top: -28px;
+
+  @include font(bold, 96px, 163px);
+  color: $color-highlight;
+
+  @media (min-width: $desktop-width) {
+    left: 8%;
+    top: 40px;
+
+    @include font(bold, 120px, 163px);
   }
 }
 

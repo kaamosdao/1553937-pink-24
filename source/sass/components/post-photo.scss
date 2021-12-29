@@ -17,6 +17,16 @@
 
 .post-photo__picture {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .post-photo__comment {
