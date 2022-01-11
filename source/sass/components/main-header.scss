@@ -22,56 +22,89 @@
   }
 }
 
+.main-header__logo-mobile {
+  display: block;
+  fill: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-tablet {
+  display: none;
+  fill: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-desktop {
+  display: none;
+  fill: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.main-header__logo-desktop-red {
+  fill: $color-highlight;
+}
+
 .main-header__logo {
   display: flex;
   margin: 0;
   padding: 0;
   text-decoration: none;
 
+
+  &:hover .main-header__logo-mobile {
+    fill: $color-highlight;
+  }
+
+  &:active .main-header__logo-mobile {
+    fill: transparentize($color-white, 0.7);
+  }
+
   @media (min-width: $tablet-width) {
     align-items: baseline;
-  }
-}
 
-.main-header__logo-glasses-tablet {
-  display: none;
-  fill: $color-white;
+    &:hover .main-header__logo-tablet {
+      fill: $color-highlight;
+    }
 
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.main-header__logo-pink {
-  fill: $color-white;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    margin-left: 12px;
+    &:active .main-header__logo-tablet {
+      fill: transparentize($color-white, 0.7);
+    }
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
+    align-items: baseline;
 
-.main-header__logo-glasses-desktop {
-  display: none;
+    &:hover .main-header__logo-desktop {
+      fill: $color-highlight;
+    }
 
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
+    &:active .main-header__logo-desktop {
+      fill: transparentize($color-white, 0.7);
+    }
 
-.main-header__logo-pink-desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    margin-left: 12px;
+    &:active .main-header__logo-desktop-red {
+      fill: transparentize($color-white, 0.7);
+    }
   }
 }

@@ -8,7 +8,9 @@
 }
 
 .social-list__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   background-color: $color-white;
@@ -23,22 +25,4 @@
     opacity: 0.1;
     border: 3px solid $color-blue-opaco;
   }
-}
-
-.social-list__link--twitter {
-  background-image: url("../../img/logo-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-list__link--facebook {
-  background-image: url("../../img/logo-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-list__link--youtube {
-  background-image: url("../../img/logo-youtube.svg");
-  background-repeat: no-repeat;
-  background-position: 58% 50%;
 }

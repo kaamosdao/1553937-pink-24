@@ -42,7 +42,8 @@
     position: absolute;
     content: "";
     bottom: 167px;
-    margin-left: -430px;
+    left: 50%;
+    margin-left: -600px;
     width: 1200px;
     height: 123px;
     background-image: url("../../img/triangle-white-footer-mobile.svg");
@@ -50,7 +51,6 @@
 
     @media (min-width: $tablet-width) {
       bottom: 306px;
-      margin-left: -265px;
       width: 1200px;
       height: 123px;
       background-image: url("../../img/triangle-white-footer-tablet.svg");
@@ -58,7 +58,7 @@
 
     @media (min-width: $desktop-width) {
       bottom: 399px;
-      margin-left: -120px;
+      margin-left: -720px;
       width: 1439px;
       height: 123px;
       background-image: url("../../img/triangle-white-footer-desktop.svg");
