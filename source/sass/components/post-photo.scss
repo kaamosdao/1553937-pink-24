@@ -32,18 +32,21 @@
 .post-photo__comment {
   display: block;
   box-sizing: border-box;
-  padding: 25px 10px 25px 17px;
+  padding: 18px 10px 18px 17px;
   width: 280px;
   background-color: $color-grey;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 23px 30px;
     width: 300px;
     flex-grow: 1;
 
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
   }
 }
 
@@ -55,12 +58,15 @@
 }
 
 .post-photo__time {
-  @include font(lighter, 14px, 24px);
+  @include font(lighter, 12px, 24px);
   text-transform: uppercase;
 }
 
 .post-photo__comment-text {
-  @include font(normal, 14px, 24px);
+  margin-top: 0;
+  margin-bottom: 11px;
+
+  @include font(normal, 14px, 24px, 0.3px);
   color: $color-blue-opaco;
 }
 
@@ -69,7 +75,7 @@
   padding-left: 31px;
   margin: 0;
 
-  @include font(normal, 12px, 24px);
+  @include font(normal, 12px, 24px, 0.3px);
   color: $color-highlight;
   text-transform: uppercase;
 
@@ -93,7 +99,7 @@
       content: "";
       top: 5px;
       left: auto;
-      right: 2px;
+      right: 0;
       width: 13px;
       height: 12px;
       background-image: url("../../img/heart.svg");

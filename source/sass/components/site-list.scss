@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
 
-  @include font(bold, 18px, 13px);
+  @include font(bold, 18px, 18px);
   text-transform: uppercase;
   list-style-type: none;
   background-color: $color-blue-opaco;
@@ -16,7 +16,7 @@
     justify-content: space-between;
     width: 620px;
 
-    @include font(normal, 18px, 18px);
+    @include font(normal, 18px, 18px, 0.4px);
     text-transform: none;
     background-color: transparent;
   }
@@ -25,7 +25,7 @@
 .site-list__link {
   display: block;
   box-sizing: border-box;
-  min-height: 63px;
+  min-height: 64px;
   padding-top: 25px;
   padding-bottom: 13px;
   text-align: center;
@@ -47,7 +47,7 @@
 
 .site-list__item {
   box-sizing: border-box;
-  min-height: 63px;
+  min-height: 64px;
   padding-left: 25px;
   padding-right: 25px;
   box-shadow: 0 1px 0 $color-black,

@@ -18,6 +18,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     min-width: $tablet-width;
+    min-height: 729px;
     background-image: url("../../img/background-house/index-background-house-tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -28,6 +29,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
+    min-height: 853px;
     background-image: url("../../img/background-house/index-background-house-desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -43,11 +45,19 @@
 
 .page-header--photos {
   min-height: 237px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 394px;
+  }
 }
 
 .page-header__text {
   margin: 0 auto 0 auto;
-  padding-top: 36px;
+  padding-top: 28px;
   width: 228px;
 
   @include font(lighter, 24px, 33px);
@@ -55,15 +65,16 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 74px;
+    padding-top: 67px;
+    padding-bottom: 59px;
     width: 620px;
 
     @include font(lighter, 50px, 68px);
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
-    padding-bottom: 104px;
+    padding-top: 59px;
+    padding-bottom: 89px;
     width: 747px;
 
     @include font(lighter, 50px, 68px);

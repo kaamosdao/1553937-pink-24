@@ -3,13 +3,17 @@
 .application-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 204px;
   list-style: none;
 }
 
 .application-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &:hover {
     opacity: 0.7;
   }
@@ -17,4 +21,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.application-list__icon {
+  margin-left: -5px;
 }

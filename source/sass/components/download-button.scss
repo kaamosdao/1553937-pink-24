@@ -4,7 +4,7 @@
   display: block;
   box-sizing: border-box;
   width: 280px;
-  height: 55px;
+  min-height: 55px;
   padding: 14px;
 
   @include font(bold, 18px, 18px);
@@ -25,9 +25,13 @@
     background-color: $color-white;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-left: auto;
     margin-right: auto;
     width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(bold, 21px, 18px);
   }
 }

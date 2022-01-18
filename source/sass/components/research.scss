@@ -8,6 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 14px;
     background-color: $color-grey;
   }
 }
@@ -27,7 +28,7 @@
     display: flex;
     margin-top: 0;
     padding-top: 54px;
-    padding-bottom: 50px;
+    padding-bottom: 67px;
     width: 940px;
     background-color: $color-grey;
   }
@@ -45,14 +46,14 @@
 .research__image-text {
   position: absolute;
   left: 10%;
-  top: -28px;
+  top: -24px;
 
   @include font(bold, 96px, 163px);
   color: $color-highlight;
 
   @media (min-width: $desktop-width) {
-    left: 8%;
-    top: 40px;
+    left: 9%;
+    top: 44px;
 
     @include font(bold, 120px, 163px);
   }
@@ -61,19 +62,21 @@
 .research__description {
   @media (min-width: $tablet-width) {
     width: 300px;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 12px;
+    margin-left: 72px;
   }
 
   @media (min-width: $desktop-width) {
     width: 534px;
-    margin-top: 50px;
-    margin-left: 70px;
+    margin-top: 64px;
+    margin-left: 72px;
   }
 }
 
 .research__title {
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
     @include font(bold, 30px, 36px);
     color: $color-black;
   }
@@ -91,12 +94,38 @@
 .research__text {
   color: $color-blue-opaco;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
-    @include font(normal, 14px, 24px);
+    margin-top: 11px;
+    margin-bottom: 9px;
+
+    @include font(normal, 14px, 24px, 0.3px);
+
+    .research__text-br-tablet {
+      display: block;
+    }
+
+    .research__text-br-desktop {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    @include font(normal, 18px, 30px);
+    margin-top: 26px;
+    margin-bottom: 31px;
+
+    @include font(normal, 18px, 30px, 0.4px);
+
+    .research__text-br-desktop {
+      display: block;
+    }
+
+    .research__text-br-tablet {
+      display: none;
+    }
   }
 }
 
@@ -114,10 +143,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include font(normal, 14px, 24px);
+    @include font(normal, 14px, 24px, 0.3px);
   }
 
   @media (min-width: $desktop-width) {
-    @include font(normal, 18px, 30px);
+    @include font(normal, 18px, 30px, 0.3px);
   }
 }

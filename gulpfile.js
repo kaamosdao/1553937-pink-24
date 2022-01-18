@@ -224,19 +224,15 @@ const copyIco = (done) => {
 
 const copyFonts = (done) => {
   gulp
-    .src(["source/fonts/*.{woff2,woff}"], {
-      base: "source",
-    })
+    .src("source/fonts/*.{woff2,woff}")
     .pipe(gulp.dest("build/fonts"));
   done();
 };
 
 const copyFavicons = (done) => {
   gulp
-    .src(["source/favicons/*.{png,svg}"], {
-      base: "source",
-    })
-    .pipe(gulp.dest("build/favicons"));
+    .src("source/img/favicons/*.{png,svg}")
+    .pipe(gulp.dest("build/img/favicons"));
   done();
 };
 

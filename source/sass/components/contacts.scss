@@ -11,6 +11,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-top: 44px;
+    margin-bottom: 33px;
+
     @include font(lighter, 40px, 54px);
   }
 

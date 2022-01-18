@@ -48,12 +48,16 @@
   &:active {
     background-color: transparentize($color-highlight, 0.7);
   }
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
 }
 
 .post-panorama__comment {
   display: block;
   box-sizing: border-box;
-  padding: 25px 10px 25px 17px;
+  padding: 18px 8px 18px 17px;
   min-height: 192px;
   background-color: $color-grey;
 
@@ -61,8 +65,7 @@
     display: grid;
     grid-template-columns: 443px 117px;
     grid-template-rows: max-content;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 23px 30px 18px 30px;
     min-height: 121px;
   }
 
@@ -90,7 +93,10 @@
 }
 
 .post-panorama__comment-text {
-  @include font(normal, 14px, 24px);
+  margin-top: 0;
+  margin-bottom: 11px;
+
+  @include font(normal, 14px, 24px, 0.3px);
   color: $color-blue-opaco;
 
   @media (min-width: $tablet-width) {
@@ -110,7 +116,7 @@
   padding-left: 31px;
   margin: 0;
 
-  @include font(normal, 12px, 24px);
+  @include font(normal, 12px, 24px, 0.3px);
   color: $color-highlight;
   text-transform: uppercase;
 
@@ -126,14 +132,16 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
-    padding: 0;
+    padding: 1px 1px 1px 0;
+
+    @include font(normal, 12px, 24px, 0.2px);
 
     &::before {
       position: absolute;
       content: "";
-      top: 5px;
+      top: 7px;
       left: auto;
-      right: 2px;
+      right: 0;
       width: 13px;
       height: 12px;
       background-image: url("../../img/heart.svg");

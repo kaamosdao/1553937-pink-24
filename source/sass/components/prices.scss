@@ -1,6 +1,7 @@
 @import "../global/variables.scss";
 
 .prices {
+  margin-top: 11px;
   min-width: 320px;
   background-color: $color-white;
   background-image: url("../../img/grey-background/grey-background-2-mobile.png");
@@ -9,10 +10,14 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
+    margin-top: -3px;
+    padding-bottom: 19px;
     background-image: url("../../img/grey-background/grey-background-2-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 4px;
+    padding-bottom: 62px;
     background-image: url("../../img/grey-background/grey-background-2-desktop.png");
   }
 }
@@ -36,7 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     display: none;

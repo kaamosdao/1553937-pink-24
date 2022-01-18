@@ -1,11 +1,12 @@
 // FONTS
 $font-family: "Open Sans", sans-serif;
 
-@mixin font($weight: normal, $size: 14px, $height: 24px) {
+@mixin font($weight: normal, $size: 14px, $height: 24px, $letter-spacing: normal) {
   font-family: $font-family;
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
+  letter-spacing: $letter-spacing;
 }
 
 $color-white: #ffffff;

@@ -3,15 +3,19 @@
 .prices-slider {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 103px;
-  padding-bottom: 45px;
+  padding-top: 128px;
+  padding-bottom: 49px;
   width: 320px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-top: 117px;
     width: 620px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 158px;
+    padding-bottom: 49px;
     width: 940px;
   }
 }

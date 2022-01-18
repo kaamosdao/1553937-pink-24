@@ -2,13 +2,23 @@
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: 178px;
+  min-width: 185px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
+  }
 }
 
 .social-list__link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 48px;
@@ -25,4 +35,8 @@
     opacity: 0.1;
     border: 3px solid $color-blue-opaco;
   }
+}
+
+.social-list__icon-youtube {
+  padding-left: 5px;
 }

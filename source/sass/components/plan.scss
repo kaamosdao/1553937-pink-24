@@ -47,7 +47,7 @@
 
     @media (min-width: $tablet-width) {
       top: 8px;
-      margin-left: 12px;
+      margin-left: 9px;
     }
 
     @media (min-width: $desktop-width) {
@@ -102,38 +102,43 @@
 }
 
 .plan__name {
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0;
 
-  @include font(bold, 16px, 30px);
+  @include font(bold, 16px, 25px);
   color: $color-white;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
-    text-transform: none;
-  }
-
   @media (min-width: $desktop-width) {
+    margin-top: -5px;
+
     @include font(bold, 18px, 30px);
-    text-transform: none;
   }
 }
 
 .plan__main-feature-name {
+  margin: 0;
+  padding: 0 0 0 20px;
+
   @media (min-width: $tablet-width) {
+    padding: 5px 5px 5px 15px;
     text-transform: none;
 
-    @include font(normal, 14px, 30px);
+    @include font(normal, 14px, 30px, 0.3px);
   }
 
   @media (min-width: $desktop-width) {
+    padding: 5px 5px 5px 20px;
     text-transform: none;
 
-    @include font(normal, 18px, 30px);
+    @include font(normal, 18px, 30px, 0.6px);
   }
 }
 
 .plan__secondary-feature-name {
+  margin: 0;
+  padding: 0 50px 0 20px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -159,12 +164,6 @@
   }
 }
 
-.plan__main-feature-name,
-.plan__secondary-feature-name {
-  margin: 0;
-  padding: 0 0 0 20px;
-}
-
 .plan__feature,
 .plan__feature-pink-base,
 .plan__feature-pink-standart,
@@ -179,7 +178,7 @@
   width: 276px;
   height: 59px;
 
-  @include font(normal, 14px, 30px);
+  @include font(normal, 14px, 30px, 0.3px);
   color: $color-blue-opaco;
   text-transform: uppercase;
   background-color: $color-white;
@@ -246,7 +245,7 @@
       top: 50%;
       right: 50%;
       margin-top: -13px;
-      margin-right: -16px;
+      margin-right: -13px;
     }
   }
 }

@@ -1,6 +1,8 @@
 @import "../global/variables.scss";
 
 .modal-failure {
+  position: absolute;
+  bottom: 1300px;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
@@ -16,6 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    bottom: 862px;
     width: 780px;
     min-height: 377px;
   }
@@ -101,4 +104,8 @@
   @media (min-width: $desktop-width) {
     width: 350px;
   }
+}
+
+.modal-failure--close {
+  display: none;
 }
