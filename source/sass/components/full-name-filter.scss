@@ -28,34 +28,44 @@
 }
 
 .full-name-filter__item:not(:last-child) {
-  padding-bottom: 29px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 50px;
+    padding-bottom: 53px;
   }
 }
 
 .full-name-filter__lable {
   margin-left: 23px;
+  margin-bottom: 5px;
 
-  @include font(normal, 14px, 30px);
+  @include font(normal, 14px, 30px, 0.4px);
   color: $color-highlight;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-right: 20px;
+    margin: 5px 19px 0 0;
   }
 }
 
 .full-name-filter__input {
   flex-grow: 1;
-  height: 59px;
-  padding-left: 22px;
+  padding-left: 21px;
+  height: 63px;
+  box-sizing: border-box;
 
-  @include font(normal, 18px, 30px);
+  @include font(normal, 18px, 30px, 0.4px);
   color: $color-blue-opaco;
   border: 2px solid $color-dark-grey;
   border-radius: 1px;
 
   @include input-states;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }

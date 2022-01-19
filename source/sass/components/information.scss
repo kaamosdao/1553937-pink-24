@@ -17,6 +17,26 @@
   }
 }
 
+.information__intro-description-1 {
+  margin: 39px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 47px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 63px 0 0;
+  }
+}
+
 .information__intro-description-2 {
-  margin: 0;
+  margin: 29px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 18px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 61px 0;
+  }
 }

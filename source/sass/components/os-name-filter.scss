@@ -6,9 +6,13 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 54px 0 54px 60px;
+    padding: 45px 0 56px 56px;
     border: 2px solid $color-dark-grey;
     border-radius: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 0 58px 72px;
   }
 }
 
@@ -16,17 +20,25 @@
   padding-bottom: 40px;
   width: 240px;
 
-  @include font(normal, 14px, 18px);
+  @include font(normal, 14px, 18px, 0.4px);
   color: $color-highlight;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-left: -25px;
+    margin-left: -27px;
+    margin-right: 0;
     padding-bottom: 0;
-    width: 318px;
+    width: 368px;
 
-    @include font(normal, 14px, 30px);
+    @include font(normal, 14px, 30px, 0.4px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -41px;
+    margin-right: 0;
+    padding-bottom: 0;
+    width: 368px;
   }
 }
 
@@ -37,5 +49,5 @@
 }
 
 .os-name-filter__item:not(:last-child) {
-  padding-bottom: 38px;
+  padding-bottom: 45px;
 }

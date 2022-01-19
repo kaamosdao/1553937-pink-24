@@ -24,10 +24,14 @@
 }
 
 .control-radio__label {
-  padding-left: 59px;
+  padding-left: 70px;
 
-  @include font(normal, 18px, 30px);
+  @include font(normal, 18px, 30px, 0.4px);
   color: $color-blue-opaco;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 61px;
+  }
 }
 
 .control-radio__mark {

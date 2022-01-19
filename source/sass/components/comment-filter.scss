@@ -6,21 +6,21 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 47px 60px 53px 60px;
+    padding: 31px 58px 44px;
     border: 2px solid $color-dark-grey;
     border-radius: 1px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 44px 60px;
+    padding: 28px 58px 36px;
   }
 }
 
 .comment-filter__title {
-  padding-bottom: 22px;
+  padding-bottom: 15px;
   width: 240px;
 
-  @include font(normal, 14px, 18px);
+  @include font(normal, 14px, 18px, 0.4px);
   color: $color-highlight;
   text-align: center;
   text-transform: uppercase;
@@ -29,17 +29,18 @@
     padding-bottom: 0;
     width: 260px;
 
-    @include font(normal, 14px, 30px);
+    @include font(normal, 14px, 30px, 0.4px);
   }
 }
 
 .comment-filter__textarea {
   box-sizing: border-box;
-  padding: 20px;
-  width: 276px;
-  height: 197px;
+  padding: 14px 20px;
+  width: 280px;
+  min-height: 201px;
+  letter-spacing: 0.4px;
 
-  @include font(normal, 18px, 30px);
+  @include font(normal, 18px, 30px, 0.4px);
   color: $color-blue-opaco;
   text-align: left;
   border: 2px solid #e5e5e5;
@@ -49,12 +50,12 @@
   @include input-states;
 
   @media (min-width: $tablet-width) {
-    width: 496px;
-    height: 189px;
+    width: 500px;
+    min-height: 193px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 816px;
-    height: 124px;
+    width: 820px;
+    min-height: 128px;
   }
 }

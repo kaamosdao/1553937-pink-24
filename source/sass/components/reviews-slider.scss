@@ -29,7 +29,7 @@
 }
 
 .reviews-slider__toggle:not(:last-child) {
-  margin: 0 19px 0 0;
+  margin: 0 17px 0 0;
 }
 
 .reviews-slider__toggle--current {
@@ -60,7 +60,7 @@
       left: 0;
       width: 22px;
       height: 41px;
-      top: 200px;
+      top: 213px;
       background-image: url("../../img/left-arrow.svg");
     }
 
@@ -94,7 +94,7 @@
       right: 0;
       width: 22px;
       height: 41px;
-      top: 200px;
+      top: 213px;
       background-image: url("../../img/left-arrow.svg");
       transform: rotate(180deg);
     }

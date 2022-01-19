@@ -9,9 +9,10 @@
 }
 
 .filter-ending__additional-information {
-  padding-top: 46px;
+  padding-top: 20px;
+  margin-bottom: 16px;
 
-  @include font(normal, 14px, 30px);
+  @include font(normal, 14px, 30px, 0.4px);
   color: $color-blue-opaco;
   text-align: center;
   text-transform: uppercase;
@@ -34,5 +35,11 @@
 
   @media (min-width: $desktop-width) {
     display: inline;
+  }
+}
+
+.filter-ending__button {
+  @media (min-width: $tablet-width) {
+    width: 300px;
   }
 }

@@ -1,29 +1,33 @@
 @import "../global/variables.scss";
 
 .contacts-group {
-  margin-bottom: 41px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 262px 262px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 22px;
     width: 524px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 262px 262px 262px;
+    grid-template-columns: repeat(3, 287px);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 19px;
     width: 863px;
   }
 }
 
 .contacts-group__phone {
-  margin-bottom: 31px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+    justify-self: left;
+    align-self: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,14 +36,18 @@
 }
 
 .contacts-group__mail {
-  margin-bottom: 35px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
+    justify-self: right;
+    align-self: start;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
+    justify-self: center;
+    align-self: start;
   }
 }
 
@@ -54,6 +62,8 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    justify-self: center;
+    align-self: start;
   }
 }
 
@@ -63,11 +73,66 @@
   text-align: center;
 }
 
+.contacts-group__phone-text {
+  margin-top: 34px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 8px 0 21px 7px;
+  }
+}
+
+.contacts-group__mail-text {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 3px;
+    margin-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 7px;
+    margin-bottom: 21px;
+    margin-left: 65px;
+  }
+}
+
+.contacts-group__adress-text {
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+  }
+}
+
 .contacts-group__phone-text,
 .contacts-group__mail-text,
 .contacts-group__adress-text {
   @include font(bold, 18px, 25px);
   color: $color-blue-opaco;
+}
+
+.contacts-group__adress-name {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+  }
 }
 
 .contacts-group__phone-number,
@@ -88,5 +153,22 @@
   &:active {
     opacity: 0.3;
     text-decoration: none;
+  }
+}
+
+.contacts-group__mail-name {
+  @media (min-width: $tablet-width) {
+    margin-right: -19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 67px;
+  }
+}
+
+.contacts-group__phone-number {
+  @media (min-width: $desktop-width) {
+    margin-left: 9px;
   }
 }

@@ -26,7 +26,7 @@
 .control-checkbox__label {
   padding-left: 59px;
 
-  @include font(normal, 18px, 30px);
+  @include font(normal, 18px, 30px, 0.4px);
   color: $color-blue-opaco;
 }
 
