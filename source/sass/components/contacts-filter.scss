@@ -38,12 +38,15 @@
 .contacts-filter__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 375px 375px;
+    column-gap: 70px;
   }
 }
 
@@ -53,10 +56,6 @@
 
   @media (min-width: $desktop-width) {
     width: 371px;
-
-    &:not(:last-child) {
-      margin-right: 74px;
-    }
   }
 }
 

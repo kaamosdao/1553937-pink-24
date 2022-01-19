@@ -3,7 +3,6 @@
 .site-list {
   color: $color-white;
   width: 100%;
-  margin: 0;
   padding: 0;
 
   @include font(bold, 18px, 18px);
@@ -13,8 +12,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
-    width: 620px;
+    flex-wrap: wrap;
+    width: 700px;
 
     @include font(normal, 18px, 18px, 0.4px);
     text-transform: none;
@@ -54,10 +53,12 @@
     inset 0 1px transparentize($color-white, 0.85);
 
   @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 78px;
+    }
     padding-left: 0;
     padding-right: 0;
     align-self: center;
-    background-color: transparent;
     box-shadow: none;
   }
 }

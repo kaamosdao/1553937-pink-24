@@ -3,8 +3,8 @@
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  min-width: 185px;
+  margin-right: -15px;
+  width: 200px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 5px;
+    margin-left: 15px;
+  }
+}
+
+.social-list__item {
+  margin-bottom: 5px;
+
+  &:not(:last-child) {
+    margin-right: 11px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 6px;
+    }
   }
 }
 
