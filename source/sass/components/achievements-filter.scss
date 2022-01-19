@@ -48,7 +48,6 @@
     grid-template-rows: repeat(2, max-content);
     row-gap: 52px;
     column-gap: 56px;
-    grid-auto-flow: column;
   }
 }
 
@@ -57,5 +56,41 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+  }
+}
+
+.achievements-filter__item--shark {
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.achievements-filter__item--chuck {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.achievements-filter__item--tower {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.achievements-filter__item--beach {
+  @media (min-width: $desktop-width) {
+    order: 4;
+  }
+}
+
+.achievements-filter__item--souvenirs {
+  @media (min-width: $desktop-width) {
+    order: 5;
+  }
+}
+
+.achievements-filter__item--destroy {
+  @media (min-width: $desktop-width) {
+    order: 6;
   }
 }

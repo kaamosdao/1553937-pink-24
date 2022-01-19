@@ -57,9 +57,11 @@
 
 .main-nav__list {
   display: none;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     display: flex;
+    margin-left: 175px;
   }
 }
 
