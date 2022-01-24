@@ -1,9 +1,10 @@
-@import "global/variables.scss";
-
 body {
   margin: 0 auto 0 auto;
-
-  @include font(normal);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: normal;
 }
 
 img {
