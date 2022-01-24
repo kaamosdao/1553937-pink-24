@@ -153,7 +153,9 @@
   }
 }
 
-.upload-filter__range-scale--current {
+.upload-filter__range-scale--current,
+.upload-filter__fill-range-scale--current,
+.upload-filter__contrast-range-scale--current {
   display: block;
 }
 

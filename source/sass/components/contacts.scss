@@ -31,13 +31,17 @@
   width: 100%;
   min-width: 320px;
   height: 200px;
+  background-image: url("../../img/map-mobile.jpg");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     height: 374px;
+    background-image: url("../../img/map-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     height: 502px;
+    background-image: url("../../img/map-desktop.jpg");
   }
 
   &::before {
